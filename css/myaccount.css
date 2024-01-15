@@ -1,0 +1,108 @@
+/* STATEMENT SUMMARY */
+.dvAccDesign .bg-acc {
+  background: url("../images/homepage/earn/bg-image.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 65vh;
+}
+
+.dvAccMenu {
+  border-bottom: 1px solid var(--bg-section);
+}
+
+.dvAccMenu .nav-link {
+  color: var(--secondary-colour);
+  padding: 0;
+}
+
+.dvAccMenu .active {
+  color: var(--primary-colour);
+}
+
+.dvStatement .psummary li {
+  width: 100%;
+  position: relative;
+  border: 1px solid var(--bg-section);
+  list-style: none;
+}
+
+.dvStatement li h3 {
+  text-align: left;
+  border-bottom: 1px solid var(--bg-section);
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--secondary-colour);
+  background: var(--bg-section);
+  width: 100%;
+}
+
+.dvStatement .psummary li:last-child h3 {
+  background: var(--primary-colour);
+}
+/* STATEMENT SUMMARY */
+
+/* TRANSACTION SUMMARY */
+
+.dvTransaction .bg-lightgrey {
+  background: var(--bg-section);
+}
+
+.dvTransaction input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  background-clip: content-box;
+  border: 1px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+  outline: none;
+}
+
+.dvTransaction input[type="radio"]:checked {
+  background-color: #213c69;
+  border: 1px solid #000;
+  outline: none;
+}
+
+.dvTransaction .prim-col {
+  color: var(--primary-colour);
+}
+
+.dvTransaction .dvCustom {
+  display: none;
+}
+
+.dvTransaction .sum-box {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* TRANSACTION SUMMARY */
+
+/* POINTS EXPIRY */
+
+.dvExpiry .bg-lightgrey {
+  background: var(--bg-section);
+}
+
+.dvExpiry .bg-primary {
+  background: var(--primary-colour) !important;
+}
+
+/* .dvExpiry .exp-body {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+} */
+
+/* POINTS EXPIRY */

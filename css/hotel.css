@@ -1,0 +1,37 @@
+/*=========[ HOTELSEARCH PAGE ]=========*/
+.dvHotelSearch .bg-lightgray {
+  background-color: var(--bg-section);
+}
+/*=========[ HOTELSEARCH PAGE ]=========*/
+
+/*=========[ HOTELDETAILS PAGE ]=========*/
+.dvHotelDetails .dvThumbSwiperSlider .img-container {
+  padding-bottom: 40%;
+}
+.dvHotelDetails .dvSelectRoom .bg-lightgray {
+  background-color: var(--bg-section);
+}
+/*=========[ HOTELDETAILS PAGE ]=========*/
+
+/*=========[ HOTELBOOKINGDETAILS PAGE ]=========*/
+.dvHotelBookingDetails .bg {
+  background-color: var(--primary-colour);
+}
+.dvHotelBookingDetails .bg-lightgray {
+  background-color: var(--bg-section);
+}
+.dvHotelBookingDetails .rounded {
+  border-radius: 5px 5px 0 0 !important;
+}
+/*=========[ HOTELBOOKINGDETAILS PAGE ]=========*/
+
+/*=========[ MEDIA QUERIES ]=========*/
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+/*=========[ MEDIA QUERIES ]=========*/
