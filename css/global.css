@@ -716,10 +716,8 @@ li li.show > .dropdown-toggle:after {
 .dvLabel .radio-container {
   display: block;
   position: relative;
-  padding-left: 26px;
-  margin-bottom: 12px;
+  padding-left: 25px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -738,10 +736,11 @@ li li.show > .dropdown-toggle:after {
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   background-color: #eee;
   border-radius: 50%;
+  box-shadow: 0px 0px 0px 1px #bebebe;
 }
 
 /* When the radio button is checked, add a blue background */
@@ -763,12 +762,14 @@ li li.show > .dropdown-toggle:after {
 
 /* Style the indicator (dot/circle) */
 .dvLabel .radio-container .radiomark:after {
-  top: 6px;
-  left: 6px;
-  width: 9px;
-  height: 9px;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   background: white;
+  box-shadow: 0 0 0 1px var(--primary-colour);
 }
 /*=========[ RADIO ]=========*/
 

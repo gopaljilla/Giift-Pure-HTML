@@ -1,4 +1,4 @@
-.dvAccDesign .bg-acc {
+.dvMember .bg-acc {
   background: url("../images/homepage/earn/bg-image.svg");
   background-position: center center;
   background-size: cover;
@@ -7,16 +7,16 @@
   height: 65vh;
 }
 
-.dvAccMenu {
+.dvAccountMenu {
   border-bottom: 1px solid var(--bg-section);
 }
 
-.dvAccMenu .nav-link {
+.dvAccountMenu .nav-link {
   color: var(--secondary-colour);
   padding: 0;
 }
 
-.dvAccMenu .active {
+.dvAccountMenu .active {
   color: var(--primary-colour);
 }
 
@@ -36,46 +36,13 @@
 /* STATEMENT SUMMARY */
 
 /* TRANSACTION SUMMARY */
-
-.dvTransaction .bg-lightgrey {
+.dvTransactionSummary .bg-lightgray {
   background: var(--bg-section);
 }
-
-.dvTransaction input[type="radio"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  padding: 3px;
-  background-clip: content-box;
-  border: 1px solid #bbbbbb;
-  background-color: #e7e6e7;
-  border-radius: 50%;
-  outline: none;
-}
-
-.dvTransaction input[type="radio"]:checked {
-  background-color: #213c69;
-  border: 1px solid #000;
-  outline: none;
-}
-
-.dvTransaction .prim-col {
+.dvTransactionSummary p.heading-xs-bold span.heading-xs-bold {
   color: var(--primary-colour);
+  font-size: 1.25rem;
 }
-
-.dvTransaction .dvCustom {
-  display: none;
-}
-
-.dvTransaction .sum-box {
-  background: #fff;
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
 /* TRANSACTION SUMMARY */
 
 /* POINTS EXPIRY */
