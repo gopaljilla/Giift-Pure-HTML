@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SBL</title>
+    <!-- css -->
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+  </head>
+  <body>
+    <div class="dvMain">
+      <div class="dvBlackStripe"></div>
+      <div class="dvHeader shadow-sm sticky-top bg-white">
+        <div class="container-lg">
+          <nav class="navbar navbar-expand-lg navbar-light flex-lg-wrap p-0">
+            <div class="navbar-brand logo m-0 col-auto col-lg-6 px-0 px-lg-3 mt-n2">
+              <a href="index.html">
+                <img src="images/logos/siddhartha-logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="navbar-brand logo m-0 col-lg-6 d-none d-lg-block text-lg-right mt-n3">
+              <a href="#">
+                <img src="images/logos/siddhartha-rewards-logo.svg" alt="" />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <hr class="m-0 w-100 d-none d-lg-block" />
+            <div class="collapse navbar-collapse col-lg-6 px-0 mb-1 mb-lg-0" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto align-items-lg-center">
+                <li class="nav-item active">
+                  <a class="nav-link border-bottom text-uppercase" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">Earn</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">Redeem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">My Account</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dvUserInfo col-12 col-lg-6 mb-2 mb-lg-0">
+              <div class="row align-items-center justify-content-end">
+                <p class="dvName col-auto px-0 mr-3">
+                  <span>Hi,</span>
+                  <span>Mr. John Right</span>
+                </p>
+                <p class="dvPoints col-auto px-0">
+                  <span>Bal Points:</span>
+                  <span>65,780/-</span>
+                </p>
+                <div class="col-auto px-0 ml-3">
+                  <button type="button" class="btn btn-primary">Login</button>
+                  <button type="button" class="btn btn-secondary">Logout</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="dvHeroSlider swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="images/sliders/hero-slider/hero-slider1.jpg" alt="" class="w-100" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/sliders/hero-slider/hero-slider2.jpg" alt="" class="w-100" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/sliders/hero-slider/hero-slider3.jpg" alt="" class="w-100" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">
+          <img src="images/icons/arrows/left-yellow-arrow-2.svg" alt="" />
+        </div>
+        <div class="swiper-button-next">
+          <img src="images/icons/arrows/right-yellow-arrow-2.svg" alt="" />
+        </div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+      <div class="dvRedemptionMenu py-5">
+        <div class="container-lg">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center mb-3">
+              <h2 class="heading-xl">Redemption Options</h2>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center d-flex flex-column align-items-center mb-3">
+              <a
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 border"
+                href="charity.html"
+                ><img
+                  src="https://shopgateway.giift.com:8443/assets/catalog/6d492/874f1/icon-charity.svg"
+                  alt="Charity"
+                />
+              </a>
+              <p class="pt-2">Charity</p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center d-flex flex-column align-items-center mb-3">
+              <a
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 border"
+                href="/Offers"
+                ><img src="https://shopgateway.giift.com:8443/assets/catalog/6d492/f69c0/offers.svg" alt="Offers" />
+              </a>
+              <p class="pt-2">Offers</p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center d-flex flex-column align-items-center mb-3">
+              <a
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 border"
+                href="utility.html"
+                ><img
+                  src="https://shopgateway.giift.com:8443/assets/catalog/6d492/9d49a/icon-utility.svg"
+                  alt="Utility"
+                />
+              </a>
+              <p class="pt-2">Utility</p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center d-flex flex-column align-items-center mb-3">
+              <a
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 border"
+                href="topup.html"
+                ><img
+                  src="https://shopgateway.giift.com:8443/assets/catalog/6d492/1adc4/icon-top-up.svg"
+                  alt="Top-Up"
+                />
+              </a>
+              <p class="pt-2">Top-Up</p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center d-flex flex-column align-items-center mb-3">
+              <a
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 border"
+                href="miles-exchange.html"
+                ><img
+                  src="https://shopgateway.giift.com:8443/assets/catalog/6d492/00fd5/icon-miles.svg"
+                  alt="Miles Exchange"
+                />
+              </a>
+              <p class="pt-2">Miles Exchange</p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center d-flex flex-column align-items-center mb-3">
+              <a
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 border"
+                href="shop.html"
+                ><img src="https://shopgateway.giift.com:8443/assets/catalog/6d492/ad630/icon-shop.svg" alt="Shop" />
+              </a>
+              <p class="pt-2">Shop</p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center d-flex flex-column align-items-center mb-3">
+              <a
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 border"
+                href="gift-cards.html"
+                ><img
+                  src="https://shopgateway.giift.com:8443/assets/catalog/6d492/b0ac0/icon-vouchers.svg"
+                  alt="Gift Cards"
+                />
+              </a>
+              <p class="pt-2">Gift Cards</p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center d-flex flex-column align-items-center mb-3">
+              <a
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 border"
+                href="lounges.html"
+                ><img
+                  src="https://shopgateway.giift.com:8443/assets/catalog/6d492/5a4fb/icon-lounges.svg"
+                  alt="Lounges"
+                />
+              </a>
+              <p class="pt-2">Lounges</p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center d-flex flex-column align-items-center mb-3">
+              <a
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 border"
+                href="hotel.html"
+                ><img src="https://shopgateway.giift.com:8443/assets/catalog/6d492/e5774/icon-hotel.svg" alt="Hotel" />
+              </a>
+              <p class="pt-2">Hotel</p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center d-flex flex-column align-items-center mb-3">
+              <a
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 border"
+                href="flight.html"
+                ><img src="https://shopgateway.giift.com:8443/assets/catalog/6d492/397f3/FLIGHT.svg" alt="Flight" />
+              </a>
+              <p class="pt-2">Flight</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dvWelcome py-5">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="heading-xl-light mb-2">Welcome to the World of Exciting Rewards!</h2>
+              <p>
+                Unlock a world of exclusive benefits, personalized offers, and exciting rewards. From earning points on
+                your everyday transactions to accessing special discounts, personalized offers, and unique rewards,
+                we're committed to ensuring that your loyalty is rewarded every step of the way.
+              </p>
+            </div>
+          </div>
+          <div class="row flex-nowrap flex-lg-wrap scroll-hoz mx-lg-n3">
+            <div class="col-md-4 d-flex flex-column h-100">
+              <div class="d-flex align-items-center m-auto">
+                <div class="no">
+                  <img src="images/homepage/welcome-section/1.svg" alt="" />
+                </div>
+                <div class="icon text-center mt-3">
+                  <img src="images/homepage/welcome-section/spend.svg" alt="" />
+                  <p class="mt-3">Spend</p>
+                </div>
+              </div>
+              <p class="text-center">
+                Swipe your Card for all your transactions from daily spending to travel and more to start earning
+                Siddhartha Rewards Points.
+              </p>
+            </div>
+            <div class="col-md-4 d-flex flex-column h-100">
+              <div class="d-flex align-items-center m-auto">
+                <div class="no">
+                  <img src="images/homepage/welcome-section/2.svg" alt="" />
+                </div>
+                <div class="icon text-center mt-3">
+                  <img src="images/homepage/welcome-section/earn.svg" alt="" />
+                  <p class="mt-3">Earn</p>
+                </div>
+              </div>
+              <p class="text-center">
+                You can earn Siddhartha Rewards Points with every swipe of your Siddhartha Card. Every transaction
+                counts, the more you spend, the more you earn.
+              </p>
+            </div>
+            <div class="col-md-4 d-flex flex-column h-100">
+              <div class="d-flex align-items-center m-auto">
+                <div class="no">
+                  <img src="images/homepage/welcome-section/3.svg" alt="" />
+                </div>
+                <div class="icon text-center mt-3">
+                  <img src="images/homepage/welcome-section/redeem.svg" alt="" />
+                  <p class="mt-3">Redeem</p>
+                </div>
+              </div>
+              <p class="text-center">
+                You can then redeem your earned Siddhartha Rewards Points for excellent options such as fine dining,
+                shopping, or traveling.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dvVouchers py-5">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2 text-center mb-4">
+              <h2 class="heading-xl-light mb-2">Vouchers</h2>
+              <p>Siddhartha Rewards brings you a wide variety of gift vouchers with over 5000+ options to pick from.</p>
+            </div>
+          </div>
+          <div class="dvVoucherSlider customizedButtons swiper row">
+            <div class="swiper-wrapper pb-3">
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 1</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 2</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 3</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 4</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 5</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 6</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 7</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 8</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="shop.html" class="btn btn-primary">View All</a>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-buttons">
+                <div class="d-flex justify-content-center">
+                  <div class="swiper-button-prev pr-3">
+                    <img src="images/icons/arrows/left-yellow-arrow-2.svg" alt="" />
+                  </div>
+                  <div class="swiper-button-next">
+                    <img src="images/icons/arrows/right-yellow-arrow-2.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dvShopDeals py-5">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2 text-center mb-4">
+              <h2 class="heading-xl-light mb-2">Shop The Best Deals</h2>
+              <p>
+                Get more for your points with our fantastic selection of curated products, featuring the best deals on
+                everything from electronics to fashion, home goods, and more.
+              </p>
+            </div>
+          </div>
+          <div class="dvShopDealsSlider customizedButtons swiper row">
+            <div class="swiper-wrapper pb-3">
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 1</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 2</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 3</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 4</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 5</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 6</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 7</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide shadow-sm">
+                <a href="">
+                  <div class="img-container">
+                    <img src="images/homepage/voucher-section/1.svg" alt="" />
+                  </div>
+                  <div class="bg-white d-flex flex-column p-2">
+                    <h2 class="heading-sm-regular text-truncate mb-2">Car Voucher 8</h2>
+                    <div class="d-flex justify-content-between">
+                      <p class="heading-xxs-regular">45,125 Points</p>
+                      <p class="heading-xxs-light">Physical</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="shop.html" class="btn btn-primary">View All</a>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-buttons">
+                <div class="d-flex justify-content-center">
+                  <div class="swiper-button-prev pr-3">
+                    <img src="images/icons/arrows/left-yellow-arrow-2.svg" alt="" />
+                  </div>
+                  <div class="swiper-button-next">
+                    <img src="images/icons/arrows/right-yellow-arrow-2.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dvTravel py-5">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2 text-center mb-4">
+              <h2 class="heading-xl-light mb-2">Travel The World</h2>
+              <p>
+                Unleash the power of your Siddhartha Rewards Points and unlock a world of travel opportunities, with
+                over 10,000+ deals on flights, hotels, and more.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+              <a href="flight.html" class="shadow-sm border d-block h-100 bg-white">
+                <div class="img-container">
+                  <img src="images/homepage/travel-section/2.svg" alt="" />
+                </div>
+                <div class="bg-white p-4">
+                  <h2 class="heading-md-regular mb-2 d-flex align-items-center">
+                    <img class="ml-n4 mr-3" src="images/icons/arrows/triangle-icon.svg" alt="" />
+                    Flights
+                  </h2>
+                  <p>
+                    Looking for ways to save money on your flights? Consider joining Siddhartha Rewards Points. As a
+                    member, you'll have access to amazing discounts, deals, and savings that can make your travel
+                    experience even better.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+              <a href="shop.html" class="shadow-sm border d-block h-100 bg-white">
+                <div class="img-container">
+                  <img src="images/homepage/travel-section/2.svg" alt="" />
+                </div>
+                <div class="bg-white p-4">
+                  <h2 class="heading-md-regular mb-2 d-flex align-items-center">
+                    <img class="ml-n4 mr-3" src="images/icons/arrows/triangle-icon.svg" alt="" />
+                    Hotels
+                  </h2>
+                  <p>
+                    Join Siddhartha Rewards Points for stress-free hotel bookings worldwide. Enjoy exclusive benefits
+                    and unbeatable savings for your business or leisure travels. Sign up today and experience
+                    exceptional accommodations that fit your budget.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+              <a href="lounge.html" class="shadow-sm border d-block h-100 bg-white">
+                <div class="img-container">
+                  <img src="images/homepage/travel-section/3.svg" alt="" />
+                </div>
+                <div class="bg-white p-4">
+                  <h2 class="heading-md-regular mb-2 d-flex align-items-center">
+                    <img class="ml-n4 mr-3" src="images/icons/arrows/triangle-icon.svg" alt="" />
+                    Lounge
+                  </h2>
+                  <p>
+                    Upgrade your airport experience with Siddhartha Rewards Points. Access exclusive lounges worldwide
+                    for VIP treatment and relaxation before your flight. Join now to enjoy unparalleled luxury at
+                    airports around the world.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dvEarn pb-5">
+        <div class="bg mb-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-8 offset-lg-2 text-center mb-4">
+                <h2 class="heading-sm-medium text-uppercase mb-3">How to Earn?</h2>
+                <h2 class="heading-xl-light mb-2 text-white">Get more from your banking experience</h2>
+                <p>
+                  Earn Siddhartha Rewards points on every transaction with the Siddhartha Bank. Enjoy significant
+                  savings on your next purchase.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row mn-top">
+            <div class="col-sm-6 col-md-4">
+              <div class="bg-white d-flex flex-column text-center shadow-sm h-100">
+                <div class="bg-icon p-5">
+                  <img src="images/homepage/earn/bonus-points.svg" alt="" />
+                </div>
+                <h2 class="heading-md-bold px-3 pt-3">Bonus Points</h2>
+                <h2 class="heading-sm-regular py-3 px-3">Join Siddhartha Rewards Points for an instant bonus</h2>
+                <p class="px-3 pb-3">
+                  Enrol in our Siddhartha Rewards Points today and instantly receive (xxx) bonus points. These points
+                  can be used to obtain exciting rewards and exclusive perks right away.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="bg-white d-flex flex-column text-center shadow-sm h-100">
+                <div class="bg-icon p-5">
+                  <img src="images/homepage/earn/daily-spends.svg" alt="" />
+                </div>
+                <h2 class="heading-md-bold px-3 pt-3">Daily Spends</h2>
+                <h2 class="heading-sm-regular py-3 px-3">Your everyday spending can lead to countless rewards</h2>
+                <p class="px-3 pb-3">
+                  Maximize your daily expenses with our Siddhartha Rewards, which lets you accumulate points on all
+                  purchases, from groceries to fuel and beyond.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="bg-white d-flex flex-column text-center shadow-sm h-100">
+                <div class="bg-icon p-5">
+                  <img src="images/homepage/earn/international-spends.svg" alt="" />
+                </div>
+                <h2 class="heading-md-bold px-3 pt-3">International Spends</h2>
+                <h2 class="heading-sm-regular py-3 px-3">Explore the globe and reap limitless benefits</h2>
+                <p class="px-3 pb-3">
+                  Siddhartha Rewards allows you to earn rewards while traveling the world. Earn points by spending on
+                  international transactions, such as flights, hotels, dining, and shopping.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dvFooter py-3 py-lg-5">
+      <div class="container-lg">
+        <div class="row">
+          <div class="dvSocialIcons col-lg-3 text-center text-lg-left order-lg-0 mb-3 mb-lg-0">
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/facebook.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/linkedin.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Twitter.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Instagram.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Youtube.svg" /></a>
+          </div>
+          <div class="dvLinks col-lg-9 text-center text-lg-right order-lg-1 mb-3 mb-lg-0">
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Earn</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Redeem</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">About Us</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">FAQs</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Terms &amp; Conditions</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Privacy Policy</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Booking Policy</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Disclaimer</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-thin my-lg-4 d-none d-lg-block"></div>
+      <div class="container-lg">
+        <div class="row align-items-lg-center">
+          <div class="col-sm-12 col-lg-2 text-center text-lg-right order-lg-4 mb-3">
+            <img class="img-fluid footer-logo" src="images/logos/footer-logo.svg" alt="Siddhartha Bank Logo" />
+          </div>
+          <div class="col-sm-12 col-lg-5 text-center text-lg-right order-lg-3 mb-3">
+            <p>
+              ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Siddhartha Rewards. All rights reserved.
+            </p>
+          </div>
+          <div
+            class="col-sm-12 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-2"
+          >
+            <p class="mr-2">Powered By:</p>
+            <div>
+              <img class="img-fluid" src="images/logos/giift-logo.svg" alt="Giift Logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+      const heroSlider = new Swiper(".dvHeroSlider.swiper", {
+        direction: "horizontal",
+        loop: false,
+        speed: 500,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        spaceBetween: 0,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+        },
+        mousewheel: {
+          enabled: false,
+        },
+        keyboard: {
+          enabled: true,
+        },
+      });
+
+      const voucherSlider = new Swiper(".dvVoucherSlider.swiper", {
+        direction: "horizontal",
+        loop: false,
+        speed: 500,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        spaceBetween: 30,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 4,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+        },
+        mousewheel: {
+          enabled: false,
+        },
+        keyboard: {
+          enabled: true,
+        },
+      });
+
+      const shopDealsSlider = new Swiper(".dvShopDealsSlider.swiper", {
+        direction: "horizontal",
+        loop: false,
+        speed: 500,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        spaceBetween: 30,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 4,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+        },
+        mousewheel: {
+          enabled: false,
+        },
+        keyboard: {
+          enabled: true,
+        },
+      });
+    </script>
+  </body>
+</html>

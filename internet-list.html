@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SBL</title>
+    <!-- css -->
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+  </head>
+  <body>
+    <!-- 
+      checkbox
+range slider
+star ratings 
+-->
+
+    <div class="dvMain">
+      <div class="dvBlackStripe"></div>
+      <div class="dvHeader shadow-sm sticky-top bg-white">
+        <div class="container-lg">
+          <nav class="navbar navbar-expand-lg navbar-light flex-lg-wrap p-0">
+            <div class="navbar-brand logo m-0 col-auto col-lg-6 px-0 px-lg-3 mt-n2">
+              <a href="index.html">
+                <img src="images/logos/siddhartha-logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="navbar-brand logo m-0 col-lg-6 d-none d-lg-block text-lg-right mt-n3">
+              <a href="#">
+                <img src="images/logos/siddhartha-rewards-logo.svg" alt="" />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <hr class="m-0 w-100 d-none d-lg-block" />
+            <div class="collapse navbar-collapse col-lg-6 px-0 mb-1 mb-lg-0" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto align-items-lg-center">
+                <li class="nav-item active">
+                  <a class="nav-link border-bottom text-uppercase" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">Earn</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">Redeem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">My Account</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dvUserInfo col-12 col-lg-6 mb-2 mb-lg-0">
+              <div class="row align-items-center justify-content-end">
+                <p class="dvName col-auto px-0 mr-3">
+                  <span>Hi,</span>
+                  <span>Mr. John Right</span>
+                </p>
+                <p class="dvPoints col-auto px-0">
+                  <span>Bal Points:</span>
+                  <span>65,780/-</span>
+                </p>
+                <div class="col-auto px-0 ml-3">
+                  <button type="button" class="btn btn-primary">Login</button>
+                  <button type="button" class="btn btn-secondary">Logout</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="dvBreadcrumbs">
+        <div class="container-lg">
+          <nav>
+            <ul class="breadcrumb px-0 py-3">
+              <li class="mr-3">
+                <a href="index.html"><img src="images/icons/arrows/back-arrow.svg" alt="" /></a>
+              </li>
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active">Internet List</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="dvProductList pb-5">
+        <div class="container-lg">
+          <div class="row">
+            <!-- <div class="col-12 mb-3 d-lg-none">
+              <button
+                data-toggle="modal"
+                data-target="#dvFilterModal"
+                type="button"
+                class="btn btn-primary w-100"
+              >
+                Filter
+              </button>
+            </div> -->
+            <div class="dvFilter modal fade col-lg-3" id="dvFilterModal" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0">
+                  <div class="modal-body p-lg-0">
+                    <button type="button" class="close d-lg-none" data-dismiss="modal">
+                      <span>&times;</span>
+                    </button>
+                    <div class="dvTotalRecords p-3 bg-lightgray">
+                      <p class="heading-sm-regular text-white">Total <span>Records</span> found <span>0</span></p>
+                    </div>
+                    <div class="accordion" id="filter-accordion">
+                      <div class="card">
+                        <div class="card-header p-0">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-block text-left heading-sm-regular"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#collapse1"
+                            >
+                              Category
+                              <span class="arrow-icon">
+                                <i class="fa fa-caret-up"></i>
+                              </span>
+                            </button>
+                          </h2>
+                        </div>
+
+                        <div id="collapse1" class="collapse show" data-parent="#filter-accordion">
+                          <div class="card-body scroll-ver p-3">
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Artificial Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Artificial Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Artificial Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header p-0">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-block text-left collapsed heading-sm-regular"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#collapse2"
+                            >
+                              Country
+                              <span class="arrow-icon">
+                                <i class="fa fa-caret-up"></i>
+                              </span>
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapse2" class="collapse" data-parent="#filter-accordion">
+                          <div class="card-body scroll-ver p-3">
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Artificial Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Artificial Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Artificial Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header p-0">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-block text-left collapsed heading-sm-regular"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#collapse3"
+                            >
+                              Price
+                              <span class="arrow-icon">
+                                <i class="fa fa-caret-up"></i>
+                              </span>
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapse3" class="collapse" data-parent="#filter-accordion">
+                          <div class="card-body scroll-ver p-3">
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Artificial Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Artificial Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Artificial Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                            <div class="dvLabel d-flex justify-content-between">
+                              <label class="checkbox-container d-flex">
+                                <span class="d-inline-block">
+                                  <input type="checkbox" />
+                                  <span class="checkmark"></span>
+                                </span>
+                                <span class="d-inline-block ml-2">Jewellery & Accessories</span>
+                              </label>
+                              <span class="d-inline-block ml-2">45</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="modal-footer d-lg-none">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Apply Filters
+                    </button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="row">
+                <div class="dvSortBy col-12 mb-3">
+                  <div
+                    class="bg-lightgray d-flex flex-wrap justify-content-between align-items-center py-2 px-2 px-lg-3 mb-1"
+                  >
+                    <button
+                      data-toggle="modal"
+                      data-target="#dvFilterModal"
+                      type="button"
+                      class="btn btn-primary col-12 d-lg-none mb-2"
+                    >
+                      Filter
+                    </button>
+                    <p class="heading-xs-regular col-8 px-0"></p>
+                    <div class="dropdown">
+                        <div class="input-group">
+                            <input autocomplete="off" type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-white"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dvProducts col-12">
+                  <div class="row">
+                    <div class="col-6 col-lg-4 mb-3">
+                      <a href="internet-list-detail.html" class="d-block shadow-sm">
+                        <div class="bg-white border h-100 d-flex flex-column">
+                          <div class="img-container">
+                            <img src="images/homepage/voucher-section/1.svg" alt="" />
+                          </div>
+                          <div class="d-flex flex-wrap bg-white py-2">
+                            <h2 class="heading-sm-regular text-truncate col-12 mb-2">Name</h2>
+                            <h2 class="heading-xxs-regular text-truncate col-6 order-1 mt-auto">546.00</h2>
+                            <h2 class="heading-xxs-light text-truncate col-6 order-2 mt-auto text-right">Physical</h2>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                      <a href="internet-list-detail.html" class="d-block shadow-sm">
+                        <div class="bg-white border h-100 d-flex flex-column">
+                          <div class="img-container">
+                            <img src="images/homepage/voucher-section/1.svg" alt="" />
+                          </div>
+                          <div class="d-flex flex-wrap bg-white py-2">
+                            <h2 class="heading-sm-regular text-truncate col-12 mb-2">Name</h2>
+                            <h2 class="heading-xxs-regular text-truncate col-6 order-1 mt-auto">546.00</h2>
+                            <h2 class="heading-xxs-light text-truncate col-6 order-2 mt-auto text-right">Physical</h2>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                      <a href="internet-list-detail.html" class="d-block shadow-sm">
+                        <div class="bg-white border h-100 d-flex flex-column">
+                          <div class="img-container">
+                            <img src="images/homepage/voucher-section/1.svg" alt="" />
+                          </div>
+                          <div class="d-flex flex-wrap bg-white py-2">
+                            <h2 class="heading-sm-regular text-truncate col-12 mb-2">Name</h2>
+                            <h2 class="heading-xxs-regular text-truncate col-6 order-1 mt-auto">546.00</h2>
+                            <h2 class="heading-xxs-light text-truncate col-6 order-2 mt-auto text-right">Physical</h2>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                      <a href="internet-list-detail.html" class="d-block shadow-sm">
+                        <div class="bg-white border h-100 d-flex flex-column">
+                          <div class="img-container">
+                            <img src="images/homepage/voucher-section/1.svg" alt="" />
+                          </div>
+                          <div class="d-flex flex-wrap bg-white py-2">
+                            <h2 class="heading-sm-regular text-truncate col-12 mb-2">Name</h2>
+                            <h2 class="heading-xxs-regular text-truncate col-6 order-1 mt-auto">546.00</h2>
+                            <h2 class="heading-xxs-light text-truncate col-6 order-2 mt-auto text-right">Physical</h2>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                      <a href="internet-list-detail.html" class="d-block shadow-sm">
+                        <div class="bg-white border h-100 d-flex flex-column">
+                          <div class="img-container">
+                            <img src="images/homepage/voucher-section/1.svg" alt="" />
+                          </div>
+                          <div class="d-flex flex-wrap bg-white py-2">
+                            <h2 class="heading-sm-regular text-truncate col-12 mb-2">Name</h2>
+                            <h2 class="heading-xxs-regular text-truncate col-6 order-1 mt-auto">546.00</h2>
+                            <h2 class="heading-xxs-light text-truncate col-6 order-2 mt-auto text-right">Physical</h2>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dvFooter py-3 py-lg-5">
+      <div class="container-lg">
+        <div class="row">
+          <div class="dvSocialIcons col-lg-3 text-center text-lg-left order-lg-0 mb-3 mb-lg-0">
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/facebook.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/linkedin.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Twitter.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Instagram.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Youtube.svg" /></a>
+          </div>
+          <div class="dvLinks col-lg-9 text-center text-lg-right order-lg-1 mb-3 mb-lg-0">
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Earn</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Redeem</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">About Us</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">FAQs</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Terms &amp; Conditions</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Privacy Policy</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Booking Policy</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Disclaimer</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-thin my-lg-4 d-none d-lg-block"></div>
+      <div class="container-lg">
+        <div class="row align-items-lg-center">
+          <div class="col-sm-12 col-lg-2 text-center text-lg-right order-lg-4 mb-3">
+            <img class="img-fluid footer-logo" src="images/logos/footer-logo.svg" alt="Siddhartha Bank Logo" />
+          </div>
+          <div class="col-sm-12 col-lg-5 text-center text-lg-right order-lg-3 mb-3">
+            <p>
+              ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Siddhartha Rewards. All rights reserved.
+            </p>
+          </div>
+          <div
+            class="col-sm-12 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-2"
+          >
+            <p class="mr-2">Powered By:</p>
+            <div>
+              <img class="img-fluid" src="images/logos/giift-logo.svg" alt="Giift Logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+      // codepen link - /*https://codepen.io/jreaux62/pen/MRXqLb*/
+      // this script is only if you need submenu.
+      $(function () {
+        $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
+          if (!$(this).next().hasClass("show")) {
+            $(this).parents(".dropdown-menu").first().find(".show").removeClass("show");
+          }
+          var $subMenu = $(this).next(".dropdown-menu");
+          $subMenu.toggleClass("show");
+          $(this).parent().toggleClass("show");
+          $(this)
+            .parents("li.nav-item.dropdown.show")
+            .on("hidden.bs.dropdown", function (e) {
+              $(".dropdown-submenu .show").removeClass("show");
+              $(".dropdown-submenu.show").removeClass("show");
+            });
+          return false;
+        });
+      });
+      // this script is only if you need submenu.
+    </script>
+
+    <!-- <script>
+      function rotateArrow(button) {
+        const arrowIcon = button.querySelector(".arrow-icon");
+        arrowIcon.style.transform = button.classList.contains("collapsed") ? "rotate(90deg)" : "rotate(0deg)";
+      }
+    </script> -->
+  </body>
+</html>
