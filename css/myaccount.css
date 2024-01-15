@@ -1,4 +1,3 @@
-/* STATEMENT SUMMARY */
 .dvAccDesign .bg-acc {
   background: url("../images/homepage/earn/bg-image.svg");
   background-position: center center;
@@ -21,29 +20,18 @@
   color: var(--primary-colour);
 }
 
-.dvStatement .psummary li {
-  width: 100%;
-  position: relative;
-  border: 1px solid var(--bg-section);
-  list-style: none;
+/* STATEMENT SUMMARY */
+.dvStatementSummary .bg-lightgray {
+  background-color: var(--bg-section);
 }
-
-.dvStatement li h3 {
-  text-align: left;
-  border-bottom: 1px solid var(--bg-section);
-  padding: 10px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--secondary-colour);
-  background: var(--bg-section);
-  width: 100%;
+.dvStatementSummary .rounded {
+  border-radius: 0.75rem 0.75rem 0 0 !important;
 }
-
-.dvStatement .psummary li:last-child h3 {
-  background: var(--primary-colour);
+.dvStatementSummary .dvBalance .bg-primary {
+  background-color: var(--primary-colour) !important;
+}
+.dvStatementSummary .dvBalance .bg-primary .heading-sm-medium {
+  color: #fff;
 }
 /* STATEMENT SUMMARY */
 
