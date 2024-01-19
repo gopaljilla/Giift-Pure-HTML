@@ -1,3 +1,4 @@
+/*=========[ ACCOUNT BG ]=========*/
 .dvMember .bg-acc {
   background: url("../images/homepage/earn/bg-image.svg");
   background-position: center center;
@@ -6,21 +7,22 @@
   width: 100%;
   height: 65vh;
 }
+/*=========[ ACCOUNT BG ]=========*/
 
+/*=========[ ACCOUNT MENU ]=========*/
 .dvAccountMenu {
   border-bottom: 1px solid var(--bg-section);
 }
-
 .dvAccountMenu .nav-link {
   color: var(--secondary-colour);
   padding: 0;
 }
-
 .dvAccountMenu .active {
   color: var(--primary-colour);
 }
+/*=========[ ACCOUNT MENU ]=========*/
 
-/* STATEMENT SUMMARY */
+/*=========[ STATEMENT SUMMARY ]=========*/
 .dvStatementSummary .bg-lightgray {
   background-color: var(--bg-section);
 }
@@ -33,9 +35,9 @@
 .dvStatementSummary .dvBalance .bg-primary .heading-sm-medium {
   color: #fff;
 }
-/* STATEMENT SUMMARY */
+/*=========[ STATEMENT SUMMARY ]=========*/
 
-/* TRANSACTION SUMMARY */
+/*=========[ TRANSACTION SUMMARY ]=========*/
 .dvTransactionSummary .bg-lightgray {
   background: var(--bg-section);
 }
@@ -43,9 +45,9 @@
   color: var(--primary-colour);
   font-size: 1.25rem;
 }
-/* TRANSACTION SUMMARY */
+/*=========[ TRANSACTION SUMMARY ]=========*/
 
-/* POINTS EXPIRY */
+/*=========[ POINTS EXPIRY ]=========*/
 
 .dvExpiry .bg-lightgrey {
   background: var(--bg-section);
@@ -60,4 +62,207 @@
   border: 1px solid #e2e2e2;
 } */
 
-/* POINTS EXPIRY */
+/*=========[ POINTS EXPIRY ]=========*/
+
+/*=========[ ORDER HISTORY ]=========*/
+.dvOrderHistory .bg-lightgray {
+  background: var(--bg-section);
+}
+/* .dvOrderHistory p.heading-xs-bold {
+  color: var(--primary-colour);
+  font-size: 1.25rem;
+}
+.dvOrderHistory p.heading-xs-bold span.heading-xs-bold {
+  color: var(--secondary-colour);
+  font-size: 1.25rem;
+} */
+/*=========[ ORDER HISTORY ]=========*/
+
+/*=========[ ORDER DETAILS ]=========*/
+.dvOrderDetails .bg-lightgray {
+  background: var(--bg-section);
+}
+.dvOrderDetails .dvOrder-steps-steps {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  margin: 8% auto;
+}
+.dvOrderDetails .dvOrder-steps .step-line {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 1px;
+  background: #e5e5e5;
+  left: 0;
+  display: none;
+}
+.dvOrderDetails .dvOrder-steps .steps {
+  width: 100%;
+  position: relative;
+  top: -16px;
+}
+.dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+.dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step:first-child {
+  text-align: left;
+  width: 32%;
+}
+.dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step .step {
+  background: #fff;
+  padding-right: 1rem;
+  font-weight: bold;
+  font-size: 10px;
+}
+.dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step .step .step-circle {
+  width: 30px;
+  height: 30px;
+  line-height: 23px;
+  text-align: center;
+  padding: 0.4rem 0.9rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-size: 16px;
+}
+.dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step .step {
+  background: #fff;
+  padding-right: 1rem;
+  font-weight: bold;
+  font-size: 10px;
+}
+.dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step .step .step-circle.future {
+  background: #f2f2f2;
+  color: #000;
+}
+
+.dvOrderDetailsPopup .modal-header {
+  padding: 0rem 1rem;
+  border-bottom: unset;
+}
+.dvOrderDetailsPopup .modal-dialog {
+  max-width: 92%;
+  margin: 1.75rem auto;
+}
+.dvOrderDetailsPopup .modal-header .close {
+  z-index: 999;
+  padding: 8px 1rem;
+  margin: -1rem -1rem -1rem auto;
+  position: relative;
+  right: -9px;
+  top: 7px;
+}
+/*=========[ ORDER DETAILS ]=========*/
+
+/*=========[ PROFILE PAGE ]=========*/
+
+.dvProfile .bg-lightgrey {
+  background: var(--bg-section);
+}
+
+.dvProfile .sum-box {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.dvProfile .sum-box .accord {
+  background: url("../images/icons/arrows/drop-up.svg") no-repeat 100%;
+}
+
+.dvProfile .sum-box .accord.collapsed {
+  background: url("../images/icons/arrows/drop-down.svg") no-repeat 100%;
+}
+/*=========[ PROFILE PAGE ]=========*/
+
+/*=========[ MANAGE PAGE ]=========*/
+.dvManage .bg-lightgrey {
+  background: var(--bg-section);
+}
+
+.dvManage .sum-box {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.dvManage .sum-box .accord {
+  background: url("../images/icons/arrows/drop-up.svg") no-repeat 100%;
+}
+
+.dvManage .sum-box .accord.collapsed {
+  background: url("../images/icons/arrows/drop-down.svg") no-repeat 100%;
+}
+/*=========[ MANAGE PAGE ]=========*/
+
+/*=========[ MEDIA QUERIES ]=========*/
+@media (min-width: 576px) {
+  .dvOrderDetails .dvOrder-steps {
+    width: 66%;
+  }
+}
+
+@media (min-width: 768px) {
+  .dvOrderDetails .dvOrder-steps .step-line {
+    display: block;
+  }
+  .dvOrderDetails .dvOrder-steps {
+    margin: 6% auto 1%;
+    width: 100%;
+    height: auto;
+  }
+  .dvOrderDetails .dvOrder-steps .step-line {
+    display: block;
+  }
+  /* .dvOrder-steps .steps {top: 30%;} */
+  .dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step:first-child {
+    text-align: left;
+    width: 34%;
+  }
+  .dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step:last-child {
+    text-align: right;
+    width: 32%;
+  }
+  .dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step .step {
+    font-size: 12px;
+    padding-left: 1rem;
+  }
+  .dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step .step .step-circle.active {
+    background: var(--green);
+  }
+  .dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step .step .stepText.active {
+    color: var(--green);
+  }
+  .dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step .step .step-circle {
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 0.5rem;
+  }
+  .dvOrderDetails .dvOrder-steps .steps .dvOrderTrack-step .step {
+    font-size: 14px;
+    padding-left: 1rem;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 992px) {
+  .dvOrderDetails .dvOrder-steps {
+    margin: 4% auto 0%;
+    width: 100%;
+    height: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dvOrderDetailsPopup .modal-dialog {
+    max-width: 65%;
+  }
+}
+/*=========[ MEDIA QUERIES ]=========*/
