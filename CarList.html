@@ -497,44 +497,46 @@
                 <div class="dvMobFilter d-md-none" data-toggle="modal" data-target="#filterBox">
                   <i class="fa fa-filter" aria-hidden="true"></i>
                 </div>
-                <div class="dvFilter modal fade border rounded-lg p-3 mt-0 mt-md-4 mb-4 col-md-12" id="filterBox">
+                <div
+                  class="dvFilter modal fade border rounded-lg p-3 p-md-0 mt-0 mt-md-4 mb-4 col-md-12"
+                  id="filterBox"
+                >
                   <div class="modal-dialog modal-dialog-scrollable" role="document">
                     <div class="modal-content">
                       <div class="modal-header d-md-none">
-                        <h5 class="modal-title" id="exampleModalLabel">Filter Results</h5>
+                        <h5 class="modal-title mb-0" id="exampleModalLabel">Filter Results</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <div class="filterBox">
-                          <div class="d-flex repMargin flex-wrap justify-content-center align-items-center">
-                            <div class="col-6 col-md-12 col-lg-6 filterIcon p-0 d-none d-md-block">
-                              <i class="fa fa-filter" aria-hidden="true"></i>
-                              <span>FILTER RESULTS</span>
-                            </div>
-                            <div
-                              class="col-6 col-md-12 col-lg-6 mt-md-2 mt-lg-0 filterBtn pr-0 pl-0 pl-md-0 pl-lg-3 d-none d-md-block"
-                            >
-                              <button type="button">Reset Filters</button>
-                            </div>
+                        <!-- <div class="filterBox"> -->
+                        <div class="row d-none d-md-block mb-md-2">
+                          <div class="col-6 col-md-12 filterIcon">
+                            <i class="fa fa-filter" aria-hidden="true"></i>
+                            <span>FILTER RESULTS</span>
                           </div>
-                          <div class="row dvPickup">
-                            <div class="col-12 col-lg-12 col-xl-12">
-                              <a
-                                class="heading-sm-regular"
-                                data-toggle="collapse"
-                                href="#filterPickup"
-                                role="button"
-                                aria-expanded="true"
-                                aria-controls="filterPickup"
-                              >
-                                PICKUP
-                              </a>
-                            </div>
-                            <div class="col-12 collapse show mt-3" id="filterPickup">
+                          <div class="col-6 col-md-12 mt-md-2 filterBtn">
+                            <button type="button">Reset Filters</button>
+                          </div>
+                        </div>
+                        <div class="row dvPickup border-bottom">
+                          <div class="col-12 col-lg-12 col-xl-12">
+                            <a
+                              class="heading-sm-regular"
+                              data-toggle="collapse"
+                              href="#filterPickup"
+                              role="button"
+                              aria-expanded="true"
+                              aria-controls="filterPickup"
+                            >
+                              PICKUP
+                            </a>
+                          </div>
+                          <div class="col-12 collapse show mb-2" id="filterPickup">
+                            <div class="row">
                               <div class="col-12 col-lg-12 col-xl-12">
-                                <div class="dvLabel mb-3">
+                                <div class="dvLabel">
                                   <label class="checkbox-container d-flex">
                                     <span class="d-inline-block ml-1">
                                       <input type="checkbox" />
@@ -547,7 +549,7 @@
                                 </div>
                               </div>
                               <div class="col-12 col-lg-12 col-xl-12">
-                                <div class="dvLabel mb-3">
+                                <div class="dvLabel">
                                   <label class="checkbox-container d-flex">
                                     <span class="d-inline-block ml-1">
                                       <input type="checkbox" />
@@ -561,7 +563,7 @@
                                 </div>
                               </div>
                               <div class="col-12 col-lg-12 col-xl-12">
-                                <div class="dvLabel mb-3">
+                                <div class="dvLabel">
                                   <label class="checkbox-container d-flex">
                                     <span class="d-inline-block ml-1">
                                       <input type="checkbox" />
@@ -576,22 +578,24 @@
                               </div>
                             </div>
                           </div>
-                          <div class="row dvPickup">
-                            <div class="col-12 col-lg-12 col-xl-12 mt-3">
-                              <a
-                                class="heading-sm-regular"
-                                data-toggle="collapse"
-                                href="#filterPassenger"
-                                role="button"
-                                aria-expanded="true"
-                                aria-controls="filterPassenger"
-                              >
-                                PASSENGERS
-                              </a>
-                            </div>
-                            <div class="col-12 collapse show mt-3" id="filterPassenger">
+                        </div>
+                        <div class="row dvPickup border-bottom">
+                          <div class="col-12 col-lg-12 col-xl-12 mt-2">
+                            <a
+                              class="heading-sm-regular"
+                              data-toggle="collapse"
+                              href="#filterPassenger"
+                              role="button"
+                              aria-expanded="true"
+                              aria-controls="filterPassenger"
+                            >
+                              PASSENGERS
+                            </a>
+                          </div>
+                          <div class="col-12 collapse show mb-2" id="filterPassenger">
+                            <div class="row">
                               <div class="col-12 col-lg-12 col-xl-12">
-                                <div class="dvLabel mb-3">
+                                <div class="dvLabel">
                                   <label class="checkbox-container d-flex">
                                     <span class="d-inline-block ml-1">
                                       <input type="checkbox" />
@@ -602,7 +606,7 @@
                                 </div>
                               </div>
                               <div class="col-12 col-lg-12 col-xl-12">
-                                <div class="dvLabel mb-3">
+                                <div class="dvLabel">
                                   <label class="checkbox-container d-flex">
                                     <span class="d-inline-block ml-1">
                                       <input type="checkbox" />
@@ -614,22 +618,24 @@
                               </div>
                             </div>
                           </div>
-                          <div class="row dvPickup">
-                            <div class="col-12 col-lg-12 col-xl-12 mt-3">
-                              <a
-                                class="heading-sm-regular"
-                                data-toggle="collapse"
-                                href="#filterSupplier"
-                                role="button"
-                                aria-expanded="true"
-                                aria-controls="filterSupplier"
-                              >
-                                SUPPLIER
-                              </a>
-                            </div>
-                            <div class="col-12 collapse show mt-3" id="filterSupplier">
+                        </div>
+                        <div class="row dvPickup border-bottom">
+                          <div class="col-12 col-lg-12 col-xl-12 mt-2">
+                            <a
+                              class="heading-sm-regular"
+                              data-toggle="collapse"
+                              href="#filterSupplier"
+                              role="button"
+                              aria-expanded="true"
+                              aria-controls="filterSupplier"
+                            >
+                              SUPPLIER
+                            </a>
+                          </div>
+                          <div class="col-12 collapse show mb-2" id="filterSupplier">
+                            <div class="row">
                               <div class="col-12 col-lg-12 col-xl-12">
-                                <div class="dvLabel mb-3">
+                                <div class="dvLabel">
                                   <label class="checkbox-container d-flex">
                                     <span class="d-inline-block ml-1">
                                       <input type="checkbox" />
@@ -640,7 +646,7 @@
                                 </div>
                               </div>
                               <div class="col-12 col-lg-12 col-xl-12">
-                                <div class="dvLabel mb-3">
+                                <div class="dvLabel">
                                   <label class="checkbox-container d-flex">
                                     <span class="d-inline-block ml-1">
                                       <input type="checkbox" />
@@ -651,7 +657,7 @@
                                 </div>
                               </div>
                               <div class="col-12 col-lg-12 col-xl-12">
-                                <div class="dvLabel mb-3">
+                                <div class="dvLabel">
                                   <label class="checkbox-container d-flex">
                                     <span class="d-inline-block ml-1">
                                       <input type="checkbox" />
@@ -662,7 +668,7 @@
                                 </div>
                               </div>
                               <div class="col-12 col-lg-12 col-xl-12">
-                                <div class="dvLabel mb-3">
+                                <div class="dvLabel">
                                   <label class="checkbox-container d-flex">
                                     <span class="d-inline-block ml-1">
                                       <input type="checkbox" />
@@ -674,22 +680,24 @@
                               </div>
                             </div>
                           </div>
-                          <div class="row dvPickup">
-                            <div class="col-12 col-lg-12 col-xl-12 mt-3">
-                              <a
-                                class="heading-sm-regular"
-                                data-toggle="collapse"
-                                href="#filterTrans"
-                                role="button"
-                                aria-expanded="true"
-                                aria-controls="filterTrans"
-                              >
-                                TRANSMISSION
-                              </a>
-                            </div>
-                            <div class="col-12 collapse show mt-3" id="filterTrans">
+                        </div>
+                        <div class="row dvPickup">
+                          <div class="col-12 col-lg-12 col-xl-12 mt-2">
+                            <a
+                              class="heading-sm-regular"
+                              data-toggle="collapse"
+                              href="#filterTrans"
+                              role="button"
+                              aria-expanded="true"
+                              aria-controls="filterTrans"
+                            >
+                              TRANSMISSION
+                            </a>
+                          </div>
+                          <div class="col-12 collapse show" id="filterTrans">
+                            <div class="row">
                               <div class="col-12 col-lg-12 col-xl-12">
-                                <div class="dvLabel mb-3">
+                                <div class="dvLabel">
                                   <label class="checkbox-container d-flex">
                                     <span class="d-inline-block ml-1">
                                       <input type="checkbox" />
@@ -702,15 +710,20 @@
                             </div>
                           </div>
                         </div>
+                        <!-- </div> -->
                       </div>
-                      <div class="d-flex justify-content-center align-items-center d-md-none">
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">View Results</button>
+                        <button type="button" class="btn btn-primary">Reset Filters</button>
+                      </div>
+                      <!-- <div class="d-flex justify-content-center align-items-center d-md-none">
                         <div class="modal-footer col-6 travelBtn">
-                          <button type="button" class="btn btn-primary" data-dismiss="modal">VIEW RESULTS</button>
+                          
                         </div>
                         <div class="modal-footer col-6 filterBtn">
-                          <button type="button" class="">RESET FILTER</button>
+                          
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>

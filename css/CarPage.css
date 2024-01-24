@@ -483,22 +483,20 @@ body {
   position: relative;
   top: 3px;
 }
-.dvCarList .dvPickup {
+/* .dvCarList .dvPickup {
   border-bottom: 1px solid #dee2e6;
-}
-.dvCarList .modal-footer {
+} */
+/* .dvCarList .modal-footer {
   border: none;
-}
-.dvCarList .modal-header {
+} */
+/* .dvCarList .modal-header {
   padding: 1rem 1rem 0.3rem;
-}
+} */
 .dvCarList .modal-header .close {
-  background: var(--secondary-colour);
+  color: var(--secondary-colour);
   opacity: 1;
-  color: #fff;
-  line-height: 21px;
-  font-size: 27px;
 }
+/*
 .dvCarList .modal-header span {
   color: #fff;
   line-height: 21px;
@@ -508,7 +506,7 @@ body {
 }
 .dvCarList .dvMyModal h4 {
   margin: -4px 0 5px;
-}
+} */
 
 /*Car details css*/
 .dvCarList .dvPayOption h1 {
@@ -778,9 +776,9 @@ body {
   font-size: 14px;
   /* font-weight: 400; */
 }
-.dvCarList .dvFilter .modal-dialog {
+/* .dvCarList .dvFilter .modal-dialog {
   margin: 1.75rem auto 0;
-}
+} */
 
 /*Car Payment Css*/
 .dvCarList .dvDriverbg {
@@ -951,12 +949,24 @@ body {
   .dvCarList .dvFilter .modal-content {
     border: none;
   }
-  .dvCarList .dvFilter .modal-body {
+  .dvCarList .dvFilter .modal-dialog-scrollable .modal-body {
+    overflow-y: visible;
+  }
+  /* .dvCarList .dvFilter .modal-body {
     padding: 0;
+  } */
+  .dvCarList .dvFilter .modal-footer .btn {
+    width: 100%;
   }
-  .dvCarList .repMargin {
+  .dvCarList .dvFilter .modal-dialog,
+  .dvCarList .dvFilter .modal-dialog-scrollable .modal-content {
+    max-height: none;
+    transform: none;
+    margin: 0 auto;
+  }
+  /* .dvCarList .repMargin {
     margin: 27px 0 20px;
-  }
+  } */
   .dvCarList .dvExcess h2 {
     float: left;
     width: auto;
