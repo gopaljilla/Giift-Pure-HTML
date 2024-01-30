@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SBL</title>
+    <!-- css -->
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/flight.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link href="css/CarPage.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--
+          checkbox
+    range slider
+    star ratings
+    -->
+
+    <div class="dvMain">
+      <div class="dvBlackStripe"></div>
+      <div class="dvHeader shadow-sm sticky-top bg-white">
+        <div class="container-lg">
+          <nav class="navbar navbar-expand-lg navbar-light flex-lg-wrap p-0">
+            <div class="navbar-brand logo m-0 col-auto col-lg-6 px-0 px-lg-3 mt-n2">
+              <a href="index.html">
+                <img src="images/logos/siddhartha-logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="navbar-brand logo m-0 col-lg-6 d-none d-lg-block text-lg-right mt-n3">
+              <a href="#">
+                <img src="images/logos/siddhartha-rewards-logo.svg" alt="" />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <hr class="m-0 w-100 d-none d-lg-block" />
+            <div class="collapse navbar-collapse col-lg-6 px-0 mb-1 mb-lg-0" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto align-items-lg-center">
+                <li class="nav-item active">
+                  <a class="nav-link border-bottom text-uppercase" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">Earn</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">Redeem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">My Account</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dvUserInfo col-12 col-lg-6 mb-2 mb-lg-0">
+              <div class="row align-items-center justify-content-end">
+                <p class="dvName col-auto px-0 mr-3">
+                  <span>Hi,</span>
+                  <span>Mr. John Right</span>
+                </p>
+                <p class="dvPoints col-auto px-0">
+                  <span>Bal Points:</span>
+                  <span>65,780/-</span>
+                </p>
+                <div class="col-auto px-0 ml-3">
+                  <button type="button" class="btn btn-primary">Login</button>
+                  <button type="button" class="btn btn-secondary">Logout</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="dvMenu">
+        <div class="container-lg">
+          <nav class="navbar navbar-expand-lg navbar-light px-0 mx-n2">
+            <div class="col-2 d-lg-none order-lg-0">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#dvMenu"
+                aria-controls="dvMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="col-10 col-lg-3 d-flex align-items-center justify-content-end order-lg-2">
+              <form class="mx-2">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+              </form>
+              <button type="button" class="btn p-0">
+                <div class="d-flex align-items-center">
+                  <span><i class="fa fa-shopping-cart"></i></span>
+                  <span class="badge bg-light border p-2 ml-2">0</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-12 col-lg-9 order-lg-1">
+              <div class="collapse navbar-collapse" id="dvMenu">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center justify-content-between text-uppercase"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Artificial Jwellery & Accessories
+                    </a>
+                    <div class="dropdown-menu w-100 py-0">
+                      <a class="dropdown-item" href="#">Bracelet</a>
+                      <a class="dropdown-item" href="#">Earnings</a>
+                      <a class="dropdown-item" href="#">Hair Accessories</a>
+                      <a class="dropdown-item" href="#">Jwellery Accessories</a>
+                      <a class="dropdown-item" href="#">Keyring</a>
+                      <a class="dropdown-item" href="#">Necklace</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center justify-content-between text-uppercase"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Clothings
+                    </a>
+                    <!-- <div class="dropdown-menu w-100 py-0">
+                                      <a class="dropdown-item" href="#">Jacket</a>
+                                    </div> -->
+                    <ul class="dropdown-menu py-0" aria-labelledby="navbarDropdownMenuLink">
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Baby & Kids</a>
+                        <ul class="dropdown-menu py-0">
+                          <li><a class="dropdown-item" href="#">Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Pants</a></li>
+
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Shoes</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Slipper</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Leather Shoes</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Diapers</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Pampers</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Huggies</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Mens</a>
+                        <ul class="dropdown-menu py-0">
+                          <li><a class="dropdown-item" href="#">Shirts</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Trousers</a>
+                          </li>
+
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Watches</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Titan</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Casio</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Footwear</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Chappal</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Sneakers</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Womens</a>
+                        <ul class="dropdown-menu py-0">
+                          <li><a class="dropdown-item" href="#">Sarees</a></li>
+                          <li><a class="dropdown-item" href="#">Dress</a></li>
+
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Bags</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Plastic Bags</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Leather Bags</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Perfumes</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Rose</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Jasmine</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center justify-content-between text-uppercase"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Handmade Dhup
+                    </a>
+                    <div class="dropdown-menu w-100 py-0">
+                      <a class="dropdown-item" href="#">Religious Item</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center justify-content-between text-uppercase"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Mens Accessories
+                    </a>
+                    <div class="dropdown-menu w-100 py-0">
+                      <a class="dropdown-item" href="#">Gloves</a>
+                      <a class="dropdown-item" href="#">Wallet</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="dvCarList py-3">
+        <div class="container">
+          <div class="carList-steps d-none d-md-block">
+            <div class="step-line"></div>
+            <div class="steps">
+              <div class="carList-step">
+                <span class="step">
+                  <span class="step-circle future rounded-circle">1</span>
+                  <span class="d-block d-md-inline font-weight-bold">Choose your car</span>
+                </span>
+              </div>
+
+              <div class="carList-step">
+                <span class="step">
+                  <span class="step-circle active rounded-circle">2</span>
+                  <span class="d-block d-md-inline active stepText font-weight-bold">View deal</span>
+                </span>
+              </div>
+              <div class="carList-step">
+                <span class="step">
+                  <span class="step-circle future rounded-circle">3</span>
+                  <step class="d-block d-md-inline font-weight-bold">Booking &amp; Payment</step>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carBox">
+          <div class="container">
+            <div class="row">
+              <div class="dvBookingSummary col-md-5 col-lg-4">
+                <div class="dvAccordian border rounded">
+                  <div class="accordion" id="accordionExample">
+                    <div class="card border-0">
+                      <div class="card-header p-0">
+                        <h2 class="mb-0">
+                          <button
+                            class="btn btn-block text-left heading-sm-medium p-3"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseOne"
+                          >
+                            Your booking summary
+                            <span class="arrow-icon">
+                              <i class="fa fa-caret-up"></i>
+                            </span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                        <div class="card-body dvBooking">
+                          <div class="row">
+                            <div class="col-1 mt-1 col-md-1 dvMap">
+                              <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 col-md-10 mt-0 mb-2 mb-md-0 dvAddress">
+                              <div class="row">
+                                <div class="col-12">
+                                  <p class="mb-2">
+                                    <strong>Pick up from:</strong> Dubai International Airport, 19 Dec 2023 12:00
+                                  </p>
+                                  <p><strong>Drop off at:</strong> Dubai International Airport, 26 Dec 2023 12:00</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card border-left-0 border-right-0 border-bottom-0 border-top">
+                      <div class="card-header p-0">
+                        <h2 class="mb-0">
+                          <button
+                            class="btn btn-block collapsed text-left heading-sm-medium p-3"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseTwo"
+                          >
+                            Your booking summary
+                            <span class="arrow-icon">
+                              <i class="fa fa-caret-up"></i>
+                            </span>
+                          </button>
+                        </h2>
+                      </div>
+
+                      <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                        <div class="card-body row">
+                          <div class="col-12">
+                            <div class="moreInfo heading-xs-regular" data-toggle="modal" data-target="#myModal">
+                              <i class="fa fa-info-circle" aria-hidden="true"></i> More info
+                            </div>
+                            <div class="carPicBox" data-toggle="modal" data-target="#myModal">
+                              <img
+                                class="img-fluid mt-auto mb-auto"
+                                src="https://cdn.enjoytravel.com/img/vehicleimages/volkswagen_polo.jpg"
+                              />
+                            </div>
+                            <div class="dvProvider">
+                              <img
+                                class="img-fluid mt-auto mb-auto"
+                                src="https://cdn.enjoytravel.com/img/logos/ace-logo.svg"
+                                width="100"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-12 mt-4">
+                            <div class="row">
+                              <div class="col-6 pb-2">
+                                <div class="cardDetails">
+                                  <i class="fa fa-check" aria-hidden="true"></i>
+                                  <p>Unlimited Mileage</p>
+                                </div>
+                              </div>
+                              <div class="col-6 pb-2">
+                                <div class="cardDetails">
+                                  <i class="fa fa-check" aria-hidden="true"></i>
+                                  <p>Stay Safe Initiative</p>
+                                </div>
+                              </div>
+                              <div class="col-6 pb-2">
+                                <div class="cardDetails">
+                                  <i class="fa fa-check" aria-hidden="true"></i>
+                                  <p>Other taxes and service charges</p>
+                                </div>
+                              </div>
+                              <div class="col-6 pb-2">
+                                <div class="cardDetails">
+                                  <i class="fa fa-check" aria-hidden="true"></i>
+                                  <p>Collision damage waiver</p>
+                                </div>
+                              </div>
+                              <div class="col-6 pb-2">
+                                <div class="cardDetails">
+                                  <i class="fa fa-check" aria-hidden="true"></i>
+                                  <p>Theft protection</p>
+                                </div>
+                              </div>
+                              <div class="col-6 pb-2">
+                                <div class="cardDetails">
+                                  <i class="fa fa-check" aria-hidden="true"></i>
+                                  <p>Unlimited Travel</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 mt-2">
+                            <div class="row dviconBox">
+                              <div class="col-6 col-md-6 d-flex mb-1 mt-2 align-items-center">
+                                <div class="borderColor">
+                                  <img src="images/carPage/icons/seat-icon.svg" class="img-fluid" />
+                                </div>
+                                <span class="ml-2">x 5</span>
+                              </div>
+                              <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                                <div class="borderColor">
+                                  <img src="images/carPage/icons/gear-icon.svg" class="img-fluid" />
+                                </div>
+                                <span class="ml-2">Automatic</span>
+                              </div>
+                              <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                                <div class="borderColor">
+                                  <img src="images/carPage/icons/door-icon.svg" class="img-fluid" />
+                                </div>
+                                <span class="ml-2">2-4</span>
+                              </div>
+                              <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                                <div class="borderColor">
+                                  <i class="fa fa-bus" aria-hidden="true"></i>
+                                </div>
+                                <span class="ml-2">Shuttle </span>
+                              </div>
+                              <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                                <div class="borderColor">
+                                  <img src="images/carPage/icons/ac-icon.svg" class="img-fluid" />
+                                </div>
+                                <span class="ml-2">AirCon</span>
+                              </div>
+                              <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                                <div class="borderColor">
+                                  <img src="images/carPage/icons/fuel-icon.svg" class="img-fluid" />
+                                </div>
+                                <span class="ml-2">Fair Fuel Policy</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dvPricing border-top border-bottom p-3">
+                    <p class="heading-sm-medium">Pricing Summary</p>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center pt-2 pb-2">
+                    <div class="col-6">
+                      <p>Car Hire:</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="text-right">143,57 <i class="fa fa-inr" aria-hidden="true"></i></p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center pt-2 pb-3">
+                    <div class="col-6">
+                      <p class="heading-sm-regular">Total:</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="text-right heading-sm-regular">143,57 <i class="fa fa-inr"></i></p>
+                    </div>
+                  </div>
+                  <div class="dvPayable p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="col-7 pl-0">
+                        <p class="heading-sm-medium">Payable today:</p>
+                      </div>
+                      <div class="col-5 pr-0">
+                        <p class="text-right heading-sm-medium">143,57 <i class="fa fa-inr"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dvPaymentOptions col-md-7 col-lg-8">
+                <div class="row">
+                  <div class="col-12 mt-3 mt-md-0 dvPayOption">
+                    <h2 class="heading-md-bold"><i class="fa fa-lock"></i> Payment Options</h2>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-8 col-lg-6 col-12 dvPayNow">
+                    <label class="border rounded-lg mt-4">
+                      <div class="payNow">
+                        <div class="col-12 p-3 divRadioBtn d-flex align-items-center">
+                          <div class="dvFloatLeft">
+                            <input type="radio" name="payment" id="myRadiobox" checked />
+                            <span class="PayCont">PAY NOW:</span>
+                            <span> 154,03 <i class="fa fa-inr" aria-hidden="true"></i></span>
+                          </div>
+                          <div class="dvChecked">
+                            <i class="fa fa-check correctIcon" id="correctIcon" aria-hidden="true"></i>
+                          </div>
+                        </div>
+
+                        <div class="border-top col-12 p-3">
+                          <div class="dvPayText">
+                            <p>
+                              Select this option to pay your car hire balance in full.. Inc.
+                              <strong class="font-weight-bold">free cancellation</strong> up to 48 hours before pick up!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-12 mt-4">
+                    <div class="travelBtn">
+                      <button type="button" class="btn btn-primary w-100" data-toggle="modal" data-target="#myModal3">
+                        Continue to Payment <i class="fa fa-caret-right" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="border boxShadow rounded-lg mt-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="p-3">
+                        <div class="row">
+                          <div class="ribbonBox dvRibbon">
+                            <span>RECOMMENDED</span>
+                          </div>
+                          <div class="col-12 productInfo position-relative">
+                            <div class="row">
+                              <div class="col-1 col-md-1 dvShield">
+                                <i class="fa fa-shield" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-10 col-md-10 mt-0 mb-2 mb-md-0 dvExcess">
+                                <div class="row">
+                                  <div class="col-12">
+                                    <h2 class="heading-md-medium">Excess Protection</h2>
+                                    <div
+                                      class="moreInfo heading-xs-regular mt-2"
+                                      data-toggle="modal"
+                                      data-target="#myModal"
+                                    >
+                                      <i class="fa fa-info-circle" aria-hidden="true"></i> More info
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row pt-2">
+                                  <div class="col-12 dvPara">
+                                    <p>
+                                      Have peace of mind and protect yourself against any charges that maybe applied if
+                                      you damage the vehicle by taking Enjoy's excess protection.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                                  <div class="col-6 col-md-7 col-lg-8 pl-0">
+                                    <div class="priceBox">
+                                      <p>154,93 <i class="fa fa-inr" aria-hidden="true"></i></p>
+                                    </div>
+                                  </div>
+                                  <div class="col-6 col-md-5 col-lg-4 pr-0">
+                                    <div class="travelBtn">
+                                      <button type="button" class="btn btn-primary w-100 dvAdd">+ ADD</button>
+                                      <button type="button" class="btn btn-primary w-100 dvRemove">- REMOVE</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border boxShadow rounded-lg mt-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="p-3">
+                        <div class="row">
+                          <div class="col-12 productInfo position-relative">
+                            <div class="row">
+                              <div class="col-1 mt-1 col-md-1 dvShield">
+                                <i class="fa fa-shield" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-10 col-md-10 mt-0 mb-2 mb-md-0 dvExcess">
+                                <div class="row">
+                                  <div class="col-12 d-flex flex-wrap align-items-center">
+                                    <h2 class="heading-md-medium mb-2 mb-lg-0">Cancellation Protection (Prepay)</h2>
+                                    <span class="heading-xs-regular">CANCELLATION PROTECTION</span>
+                                  </div>
+                                </div>
+                                <div class="row pt-2">
+                                  <div class="col-12 dvPara">
+                                    <p>
+                                      If you pay in full online for your rental, you will normally have FREE
+                                      cancellation, meaning you can cancel your booking and receive a full refund up to
+                                      48 hours prior to the start of your rental. This Cancellation Protect (Prepay)
+                                      option allows cancellations to be made up until the time of collection.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                                  <div class="col-6 col-md-7 col-lg-8 pl-0">
+                                    <div class="priceBox">
+                                      <p>110,89 <i class="fa fa-inr" aria-hidden="true"></i></p>
+                                    </div>
+                                  </div>
+                                  <div class="col-6 col-md-5 col-lg-4 pr-0">
+                                    <div class="travelBtn">
+                                      <button type="button" class="btn btn-primary w-100 dvAdd2">+ ADD</button>
+                                      <button type="button" class="btn btn-primary w-100 dvRemove2">- REMOVE</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-12 dvAddit">
+                    <p>Additional Equipment</p>
+                  </div>
+                </div>
+                <div class="mt-1 border boxShadow rounded-lg">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="p-3">
+                        <div class="row">
+                          <div class="col-12 productInfo position-relative">
+                            <div class="row">
+                              <div class="col-12 dvExcess">
+                                <div class="row">
+                                  <div class="col-12 dvPara">
+                                    <p>
+                                      Please note these additional extras are payable locally and do not form part of
+                                      the rental price shown. Prices are displayed by pressing the title of each extra.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-start align-items-center mt-4 mb-4">
+                              <div class="col-12 col-sm-4 dvSelectForm pl-0 mb-2">
+                                <div class="select input-group">
+                                  <div class="selectBtn form-control" data-type="firstOption">Select</div>
+                                  <div class="selectDropdown">
+                                    <div class="option" data-type="firstOption">1</div>
+                                    <div class="option" data-type="secondOption">2</div>
+                                    <div class="option" data-type="thirdOption">3</div>
+                                    <div class="option" data-type="forthOption">4</div>
+                                    <div class="option" data-type="fifthOption">5</div>
+                                    <div class="option" data-type="sixthOption">6</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-sm-4 col-lg-4 dvChildName pl-md-2 pl-lg-5">
+                                <p>Child Booster Seat</p>
+                                <div class="moreInfo heading-xs-regular" data-toggle="modal" data-target="#myModal2">
+                                  <i class="fa fa-info-circle" aria-hidden="true"></i> More info
+                                </div>
+                              </div>
+                              <div class="col-6 col-sm-4 col-lg-4 dvPrice">
+                                <p>154,93 <i class="fa fa-inr" aria-hidden="true"></i></p>
+                                <span>(per rental)</span>
+                              </div>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-start align-items-center mt-4 mb-4">
+                              <div class="col-12 col-sm-4 dvSelectForm pl-0 mb-2">
+                                <div class="select input-group">
+                                  <div class="selectBtn form-control" data-type="firstOption">Select</div>
+                                  <div class="selectDropdown">
+                                    <div class="option" data-type="firstOption">1</div>
+                                    <div class="option" data-type="secondOption">2</div>
+                                    <div class="option" data-type="thirdOption">3</div>
+                                    <div class="option" data-type="forthOption">4</div>
+                                    <div class="option" data-type="fifthOption">5</div>
+                                    <div class="option" data-type="sixthOption">6</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-sm-4 col-lg-4 dvChildName pl-md-2 pl-lg-5">
+                                <p>Child Booster Seat</p>
+                                <div class="moreInfo heading-xs-regular" data-toggle="modal" data-target="#myModal2">
+                                  <i class="fa fa-info-circle" aria-hidden="true"></i> More info
+                                </div>
+                              </div>
+                              <div class="col-6 col-sm-4 col-lg-4 dvPrice">
+                                <p>154,93 <i class="fa fa-inr" aria-hidden="true"></i></p>
+                                <span>(per rental)</span>
+                              </div>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-start align-items-center mt-4 mb-4">
+                              <div class="col-12 col-sm-4 dvSelectForm pl-0 mb-2">
+                                <div class="select input-group">
+                                  <div class="selectBtn form-control" data-type="firstOption">Select</div>
+                                  <div class="selectDropdown">
+                                    <div class="option" data-type="firstOption">1</div>
+                                    <div class="option" data-type="secondOption">2</div>
+                                    <div class="option" data-type="thirdOption">3</div>
+                                    <div class="option" data-type="forthOption">4</div>
+                                    <div class="option" data-type="fifthOption">5</div>
+                                    <div class="option" data-type="sixthOption">6</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-sm-4 col-lg-4 dvChildName pl-md-2 pl-lg-5">
+                                <p>Child Booster Seat</p>
+                                <div class="moreInfo heading-xs-regular" data-toggle="modal" data-target="#myModal2">
+                                  <i class="fa fa-info-circle" aria-hidden="true"></i> More info
+                                </div>
+                              </div>
+                              <div class="col-6 col-sm-4 col-lg-4 dvPrice">
+                                <p>154,93 <i class="fa fa-inr" aria-hidden="true"></i></p>
+                                <span>(per rental)</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-12 mt-4">
+                    <div class="travelBtn">
+                      <button
+                        type="button"
+                        class="btn btn-primary w-100"
+                        onclick="window.location.href='CarPayment.aspx';"
+                      >
+                        Continue to Payment <i class="fa fa-caret-right" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CarLarge modal pop up start-->
+        <div class="dvMyModal modal fade" id="myModal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Important information</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body mb-2">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="carPicBox">
+                      <img
+                        class="img-fluid mt-auto mb-auto"
+                        src="https://cdn.enjoytravel.com/img/vehicleimages/volkswagen_polo.jpg"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="carHead">
+                      <p class="heading-xl-light">Volkswagen Polo</p>
+                      <span>or similar (Small)</span>
+                    </div>
+                    <div class="row dviconBox">
+                      <div class="col-6 col-md-6 d-flex mb-1 mt-2 align-items-center">
+                        <div class="borderColor">
+                          <img src="images/carPage/icons/seat-icon.svg" class="img-fluid" />
+                        </div>
+                        <span class="ml-2">x 5</span>
+                      </div>
+                      <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                        <div class="borderColor">
+                          <img src="images/carPage/icons/gear-icon.svg" class="img-fluid" />
+                        </div>
+                        <span class="ml-2">Automatic</span>
+                      </div>
+                      <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                        <div class="borderColor">
+                          <img src="images/carPage/icons/door-icon.svg" class="img-fluid" />
+                        </div>
+                        <span class="ml-2">2-4</span>
+                      </div>
+                      <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                        <div class="borderColor">
+                          <i class="fa fa-bus" aria-hidden="true"></i>
+                        </div>
+                        <span class="ml-2">Shuttle </span>
+                      </div>
+                      <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                        <div class="borderColor">
+                          <img src="images/carPage/icons/ac-icon.svg" class="img-fluid" />
+                        </div>
+                        <span class="ml-2">AirCon</span>
+                      </div>
+                      <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                        <div class="borderColor">
+                          <img src="images/carPage/icons/fuel-icon.svg" class="img-fluid" />
+                        </div>
+                        <span class="ml-2">Fair Fuel Policy</span>
+                      </div>
+                    </div>
+                    <div class="dvDeal mt-3">
+                      <h2 class="heading-xxs-medium">YOUR DEAL</h2>
+                      <p>154,93 <i class="fa fa-inr" aria-hidden="true"></i> <span>(22,17 € a day)</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 border-top pt-3 mt-3 pr-0 pl-0 productDetails">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="col-6 col-md-6 order-md-0">
+                      <div class="carLogo">
+                        <img class="img-fluid mt-auto mb-auto" src="images/logos/giift-logo-blue.svg" alt="Logo" />
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6 mt-2 mt-md-0 order-md-1 text-left">
+                      <div class="vehicleLocation">
+                        <a href="#" class="heading-md-medium"
+                          ><i class="fa fa-map-marker" aria-hidden="true"></i> Vehicle location:</a
+                        >
+                        <span>Dubai Intl, Airport, Terminal 3, 154 Airport Road, Dubai, 21971</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 mt-4">
+                      <div class="row">
+                        <div class="col-6 col-md-4 pb-2">
+                          <div class="cardDetails">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Unlimited Mileage</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 pb-2">
+                          <div class="cardDetails">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Stay Safe Initiative</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 pb-2">
+                          <div class="cardDetails">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Other taxes and service charges</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 pb-2">
+                          <div class="cardDetails">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Collision damage waiver</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 pb-2">
+                          <div class="cardDetails">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Theft protection</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 pb-2">
+                          <div class="cardDetails">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Unlimited Travel</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- child popup modal pop up end-->
+        <div class="dvMyModal dvpopupDeatils modal fade" id="myModal2">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-12 col-md-6 ml-3">
+                    <div class="carPicBox">
+                      <img class="img-fluid mt-auto mb-auto" src="images/popup-logo.png" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 pt-3 mt-3 pr-0 pl-0 productDetails">
+                  <div class="d-flex dvpopupBooster flex-wrap justify-content-between align-items-center mt-2">
+                    <div class="col-12 col-md-6 order-md-0">
+                      <p><i class="fa fa-clipboard" aria-hidden="true"></i> Infant Seat (0-1 year)</p>
+                    </div>
+                    <div class="col-12 col-md-6 mt-2 mt-md-0 order-md-1 text-left">
+                      <span>44,10 <i class="fa fa-inr" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                  <div class="row dvSeat mt-2">
+                    <div class="col-12">
+                      <p class="p-3">Infant Seat (0-1 year)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add popup modal pop up end-->
+        <div class="dvMyModal dvpopupDeatils modal fade" id="myModal3">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-12 col-md-12 dvWarning text-center">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <h1>Warning! You do not have Excess Protection</h1>
+                    <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Excess: 3000.00 AED</p>
+                    <span
+                      >Have peace of mind and protect yourself against any charges that maybe applied if you damage the
+                      vehicle by taking Enjoy's excess protection.</span
+                    >
+                  </div>
+                  <div class="col-12 col-md-12 ml-3 dvExPoint text-center">
+                    <p>
+                      <i class="fa fa-shield" aria-hidden="true"></i> Excess: 3000.00 AED
+                      <span>154,93 <i class="fa fa-inr" aria-hidden="true"></i></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mb-4">
+                  <div class="col-6 col-md-6 col-lg-3 mt-4 travelGrayBtn">
+                    <button type="button" class="hvr-sweep-to-right w-100" data-dismiss="modal">No Thanks</button>
+                  </div>
+
+                  <div class="col-6 col-md-6 col-lg-3 mt-4 travelBtn">
+                    <button type="button" class="btn btn-primary w-100">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dvFooter py-3 py-lg-5">
+      <div class="container-lg">
+        <div class="row">
+          <div class="dvSocialIcons col-lg-3 text-center text-lg-left order-lg-0 mb-3 mb-lg-0">
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/facebook.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/linkedin.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Twitter.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Instagram.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Youtube.svg" /></a>
+          </div>
+          <div class="dvLinks col-lg-9 text-center text-lg-right order-lg-1 mb-3 mb-lg-0">
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Earn</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Redeem</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">About Us</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">FAQs</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Terms &amp; Conditions</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Privacy Policy</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Booking Policy</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Disclaimer</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-thin my-lg-4 d-none d-lg-block"></div>
+      <div class="container-lg">
+        <div class="row align-items-lg-center">
+          <div class="col-sm-12 col-lg-2 text-center text-lg-right order-lg-4 mb-3">
+            <img class="img-fluid footer-logo" src="images/logos/footer-logo.svg" alt="Siddhartha Bank Logo" />
+          </div>
+          <div class="col-sm-12 col-lg-5 text-center text-lg-right order-lg-3 mb-3">
+            <p>
+              ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Siddhartha Rewards. All rights reserved.
+            </p>
+          </div>
+          <div
+            class="col-sm-12 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-2"
+          >
+            <p class="mr-2">Powered By:</p>
+            <div>
+              <img class="img-fluid" src="images/logos/giift-logo.svg" alt="Giift Logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+      //custom select
+      document.addEventListener("mousedown", function (event) {
+        var dropdowns = document.querySelectorAll(".selectDropdown.toggle");
+        dropdowns.forEach(function (dropdown) {
+          if (!dropdown.contains(event.target)) {
+            dropdown.classList.remove("toggle");
+            dropdown.previousElementSibling.classList.remove("toggle");
+          }
+        });
+      });
+      var select = document.querySelectorAll(".select");
+      var index = 1;
+      select.forEach(function (e) {
+        e.querySelector(".selectBtn").addEventListener("mousedown", function (event) {
+          event.stopPropagation();
+          var dropdown = this.nextElementSibling;
+          dropdown.classList.toggle("toggle");
+          dropdown.style.zIndex = index++;
+          this.classList.toggle("toggle");
+        });
+        e.querySelectorAll(".option").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var select = this.closest(".select");
+            select.querySelector(".selectDropdown").classList.remove("toggle");
+            select.querySelector(".selectBtn").classList.remove("toggle");
+            select.querySelector(".selectBtn").setAttribute("data-type", this.getAttribute("data-type"));
+            select.querySelector(".selectBtn").innerText = this.innerText;
+          });
+        });
+      });
+      //custom select
+    </script>
+
+    <script>
+      //datepicker for hotel search form in modify button
+      $(function () {
+        $("#datepicker,#datepicker2").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          yearRange: "1900:2025",
+          // showButtonPanel: true,
+          dateFormat: "dd-mm-yy",
+          //if you want current date selection only
+          minDate: -0,
+          // maxDate: -0,
+        });
+      });
+      //datepicker for hotel search form in modify button
+    </script>
+
+    <script>
+      const dvAdd = document.querySelector(".dvAdd");
+      const dvRemove = document.querySelector(".dvRemove");
+      dvRemove.style.display = "none";
+      dvAdd.addEventListener("click", function () {
+        dvAdd.style.display = "none";
+        dvRemove.style.display = "block";
+      });
+      dvRemove.addEventListener("click", function () {
+        dvAdd.style.display = "block";
+        dvRemove.style.display = "none";
+      });
+      const dvAdd2 = document.querySelector(".dvAdd2");
+      const dvRemove2 = document.querySelector(".dvRemove2");
+      dvRemove2.style.display = "none";
+      dvAdd2.addEventListener("click", function () {
+        dvAdd2.style.display = "none";
+        dvRemove2.style.display = "block";
+      });
+      dvRemove2.addEventListener("click", function () {
+        dvAdd2.style.display = "block";
+        dvRemove2.style.display = "none";
+      });
+    </script>
+    <script>
+      // JavaScript logic to show/hide the image based on radio button state
+      document.addEventListener("DOMContentLoaded", function () {
+        var radioButtons = document.querySelectorAll('input[type="radio"]');
+        var images = document.querySelectorAll(".correctIcon");
+
+        radioButtons.forEach(function (radioButton, index) {
+          radioButton.addEventListener("change", function () {
+            images.forEach(function (image, i) {
+              image.style.display = index === i && radioButton.checked ? "inline-block" : "none";
+            });
+          });
+        });
+        if (document.getElementById("myRadiobox").checked) {
+          document.getElementById("correctIcon").style.display = "block";
+        } else {
+          document.getElementById("correctIcon").style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

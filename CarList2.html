@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SBL</title>
+    <!-- css -->
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/flight.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <!-- <link href="css/CarPage.css" rel="stylesheet" type="text/css" /> -->
+    <link href="css/car.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--
+          checkbox
+    range slider
+    star ratings
+    -->
+
+    <div class="dvMain">
+      <div class="dvBlackStripe"></div>
+      <div class="dvHeader shadow-sm sticky-top bg-white">
+        <div class="container-lg">
+          <nav class="navbar navbar-expand-lg navbar-light flex-lg-wrap p-0">
+            <div class="navbar-brand logo m-0 col-auto col-lg-6 px-0 px-lg-3 mt-n2">
+              <a href="index.html">
+                <img src="images/logos/siddhartha-logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="navbar-brand logo m-0 col-lg-6 d-none d-lg-block text-lg-right mt-n3">
+              <a href="#">
+                <img src="images/logos/siddhartha-rewards-logo.svg" alt="" />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <hr class="m-0 w-100 d-none d-lg-block" />
+            <div class="collapse navbar-collapse col-lg-6 px-0 mb-1 mb-lg-0" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto align-items-lg-center">
+                <li class="nav-item active">
+                  <a class="nav-link border-bottom text-uppercase" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">Earn</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">Redeem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border-bottom text-uppercase" href="#">My Account</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dvUserInfo col-12 col-lg-6 mb-2 mb-lg-0">
+              <div class="row align-items-center justify-content-end">
+                <p class="dvName col-auto px-0 mr-3">
+                  <span>Hi,</span>
+                  <span>Mr. John Right</span>
+                </p>
+                <p class="dvPoints col-auto px-0">
+                  <span>Bal Points:</span>
+                  <span>65,780/-</span>
+                </p>
+                <div class="col-auto px-0 ml-3">
+                  <button type="button" class="btn btn-primary">Login</button>
+                  <button type="button" class="btn btn-secondary">Logout</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="dvMenu">
+        <div class="container-lg">
+          <nav class="navbar navbar-expand-lg navbar-light px-0 mx-n2">
+            <div class="col-2 d-lg-none order-lg-0">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#dvMenu"
+                aria-controls="dvMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="col-10 col-lg-3 d-flex align-items-center justify-content-end order-lg-2">
+              <form class="mx-2">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+              </form>
+              <button type="button" class="btn p-0">
+                <div class="d-flex align-items-center">
+                  <span><i class="fa fa-shopping-cart"></i></span>
+                  <span class="badge bg-light border p-2 ml-2">0</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-12 col-lg-9 order-lg-1">
+              <div class="collapse navbar-collapse" id="dvMenu">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center justify-content-between text-uppercase"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Artificial Jwellery & Accessories
+                    </a>
+                    <div class="dropdown-menu w-100 py-0">
+                      <a class="dropdown-item" href="#">Bracelet</a>
+                      <a class="dropdown-item" href="#">Earnings</a>
+                      <a class="dropdown-item" href="#">Hair Accessories</a>
+                      <a class="dropdown-item" href="#">Jwellery Accessories</a>
+                      <a class="dropdown-item" href="#">Keyring</a>
+                      <a class="dropdown-item" href="#">Necklace</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center justify-content-between text-uppercase"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Clothings
+                    </a>
+                    <!-- <div class="dropdown-menu w-100 py-0">
+                                      <a class="dropdown-item" href="#">Jacket</a>
+                                    </div> -->
+                    <ul class="dropdown-menu py-0" aria-labelledby="navbarDropdownMenuLink">
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Baby & Kids</a>
+                        <ul class="dropdown-menu py-0">
+                          <li><a class="dropdown-item" href="#">Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Pants</a></li>
+
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Shoes</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Slipper</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Leather Shoes</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Diapers</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Pampers</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Huggies</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Mens</a>
+                        <ul class="dropdown-menu py-0">
+                          <li><a class="dropdown-item" href="#">Shirts</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Trousers</a>
+                          </li>
+
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Watches</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Titan</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Casio</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Footwear</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Chappal</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Sneakers</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Womens</a>
+                        <ul class="dropdown-menu py-0">
+                          <li><a class="dropdown-item" href="#">Sarees</a></li>
+                          <li><a class="dropdown-item" href="#">Dress</a></li>
+
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Bags</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Plastic Bags</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Leather Bags</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Perfumes</a>
+                            <ul class="dropdown-menu py-0">
+                              <li>
+                                <a class="dropdown-item" href="#">Rose</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Jasmine</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center justify-content-between text-uppercase"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Handmade Dhup
+                    </a>
+                    <div class="dropdown-menu w-100 py-0">
+                      <a class="dropdown-item" href="#">Religious Item</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center justify-content-between text-uppercase"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Mens Accessories
+                    </a>
+                    <div class="dropdown-menu w-100 py-0">
+                      <a class="dropdown-item" href="#">Gloves</a>
+                      <a class="dropdown-item" href="#">Wallet</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="dvCarList pb-5">
+        <div class="container-lg">
+          <div class="dvCarSteps row py-4 justify-content-between justify-content-sm-center">
+            <div class="col-3 d-flex flex-column flex-lg-row text-center align-items-center justify-content-center">
+              <p class="circle circle-active mr-lg-2 heading-xs-regular">1</p>
+              <p class="d-lg-flex text-active align-items-lg-center">
+                Choose <span class="d-none d-sm-block ml-lg-1">Your Car</span>
+              </p>
+            </div>
+            <div class="col-sm-1 d-sm-flex align-items-sm-center justify-content-sm-center d-none d-sm-block px-sm-0">
+              <div class="border w-100"></div>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-3 d-flex flex-column flex-lg-row text-center align-items-center justify-content-center"
+            >
+              <p class="circle mr-lg-2 heading-xs-regular">2</p>
+              <p class="d-lg-flex align-items-lg-center"><span class="d-none d-sm-block mr-lg-1">View</span> Deal</p>
+            </div>
+            <div class="col-sm-1 d-sm-flex align-items-sm-center justify-content-sm-center d-none d-sm-block px-sm-0">
+              <div class="border w-100"></div>
+            </div>
+            <div class="col-3 d-flex flex-column flex-lg-row text-center align-items-center justify-content-center">
+              <p class="circle mr-lg-2 heading-xs-regular">3</p>
+              <p class="d-lg-flex align-items-lg-center">
+                <span class="d-none d-sm-block mr-lg-1">Booking &amp;</span> Payment
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="dvSidebar col-lg-3 mb-3 mb-lg-0">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="border rounded p-3">
+                    <div class="dvCarInfo row">
+                      <div class="col-6 col-lg-12 mb-1 mb-lg-2 order-lg-0">
+                        <img src="images/carpage/car.png" width="40" alt="" />
+                      </div>
+                      <div class="col-6 col-lg-12 mb-1 text-right text-lg-left order-lg-3">
+                        <button class="btn btn-primary editBtn">Edit</button>
+                      </div>
+                      <div class="col-12 col-sm-6 col-lg-12 mb-3 order-lg-1">
+                        <h2 class="heading-xs-medium mb-1">Pickup Location</h2>
+                        <p class="heading-xs-regular">Dubai International Airport</p>
+                        <p class="heading-xxs-regular">18 Dec 23 - 25 Dec 23</p>
+                      </div>
+                      <div class="col-12 col-sm-6 col-lg-12 order-lg-2 mb-3 mb-lg-3">
+                        <h2 class="heading-xs-medium mb-1">Drop Off Location</h2>
+                        <p class="heading-xs-regular">Dubai International Airport</p>
+                        <p class="heading-xxs-regular">18 Dec 23 - 25 Dec 23</p>
+                      </div>
+                      <div class="col-12 col-sm-6 col-lg-12 order-lg-2 mb-lg-2">
+                        <p class="heading-xxs-medium">
+                          Driver's Residence Country: <span class="heading-xxs-medium">India</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="dvQuoteModal row d-none">
+                      <div class="col-12 d-flex justify-content-between align-items-center mb-3">
+                        <h2 class="heading-sm-regular">Get Your Quote Now!</h2>
+                        <button class="btn btn-secondary closeBtn">
+                          <i class="fa fa-times"></i>
+                        </button>
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label class="heading-xxs-regular">Pick up location?</label>
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control radius border-right-0"
+                            id=""
+                            placeholder="enter a pick-up location"
+                          />
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-white"> <i class="fa fa-map-marker"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label class="heading-xxs-regular">Pickup Date</label>
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control radius border-right-0"
+                            id=""
+                            placeholder="enter a pick-up date"
+                          />
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-white"> <i class="fa fa-map-marker"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label for="number" class="heading-xxs-regular">Pickup Time</label>
+                        <select class="form-control" name="number" id="number">
+                          <option selected="selected">1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                        </select>
+                      </div>
+                      <div class="col-12 mb-3">
+                        <div class="dvLabel">
+                          <label class="checkbox-container d-flex">
+                            <span class="d-inline-block">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </span>
+                            <span class="d-inline-block ml-2 heading-xxs-regular pt-1"
+                              >Return car to same location?</span
+                            >
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label class="heading-xxs-regular">Drop off date</label>
+                        <div class="input-group">
+                          <input
+                            id="datepicker"
+                            value="Enter Date"
+                            autocomplete="off"
+                            type="text"
+                            class="form-control radius"
+                          />
+                          <div class="input-group-append">
+                            <span class="input-group-text bg-white"><i class="fa fa-calendar-o"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label for="number2" class="heading-xxs-regular">Drop Off Time</label>
+                        <select class="form-control" name="number2" id="number2">
+                          <option selected="selected">1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                        </select>
+                      </div>
+                      <div class="col-12 mb-3">
+                        <div class="dvLabel">
+                          <label class="checkbox-container d-flex">
+                            <span class="d-inline-block">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </span>
+                            <span class="d-inline-block ml-2 heading-xxs-regular pt-1">Driver age 30-65 years?</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label class="heading-xxs-regular">Discount</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control radius border-right-0" id="" placeholder="Discount" />
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-white"><i class="fa fa-percent"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-3">
+                        <div class="dvLabel">
+                          <label class="checkbox-container d-flex">
+                            <span class="d-inline-block">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </span>
+                            <span class="d-inline-block ml-2 heading-xxs-regular pt-1"
+                              >Driver's Residence Country: IN</span
+                            >
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary">Search</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn dvFilterBtn d-lg-none" data-toggle="modal" data-target="#dvFilterModal">
+                  <i class="fa fa-filter"></i>
+                </button>
+                <div class="dvFilters modal fade col-lg-12 px-0" id="dvFilterModal">
+                  <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header align-items-center d-lg-none order-lg-1">
+                        <h5 class="heading-md-medium">Filter Results</h5>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                          <i class="fa fa-times"></i>
+                        </button>
+                      </div>
+                      <div class="modal-body order-lg-2">
+                        <div class="border-lg p-lg-3">
+                          <!-- <div class="row d-none">
+                            <div class="col-6 col-md-12">
+                              <i class="fa fa-filter"></i>
+                              <span>Filter Results</span>
+                            </div>
+                            <div class="col-6 col-md-12 mb-lg-3">
+                              <button type="button" class="btn btn-primary">Reset Filters</button>
+                            </div>
+                          </div> -->
+                          <div class="row">
+                            <div class="col-12">
+                              <h2 class="heading-sm-regular mb-2">Pickup</h2>
+                            </div>
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="dvLabel">
+                                    <label class="checkbox-container d-flex">
+                                      <span class="d-inline-block">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                      </span>
+                                      <span class="d-inline-block ml-2"
+                                        ><i class="fa fa-plane small-icon"></i> Airport</span
+                                      >
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="dvLabel">
+                                    <label class="checkbox-container d-flex">
+                                      <span class="d-inline-block">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                      </span>
+                                      <span class="d-inline-block ml-2">
+                                        <i class="fa fa-bus small-icon"></i>
+                                        Shuttle</span
+                                      >
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="dvLabel">
+                                    <label class="checkbox-container d-flex">
+                                      <span class="d-inline-block">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                      </span>
+                                      <span class="d-inline-block ml-2">
+                                        <i class="fa fa-home small-icon"></i>
+                                        Local Office</span
+                                      >
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row py-2">
+                            <div class="col-12 border-bottom"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <h2 class="heading-sm-regular mb-2">Passengers</h2>
+                            </div>
+                            <div class="col-12 collapse show" id="filterPassenger">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="dvLabel">
+                                    <label class="checkbox-container d-flex">
+                                      <span class="d-inline-block">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                      </span>
+                                      <span class="d-inline-block ml-2">3 to 4</span>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="dvLabel">
+                                    <label class="checkbox-container d-flex">
+                                      <span class="d-inline-block">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                      </span>
+                                      <span class="d-inline-block ml-2"> 4 to 5</span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row py-2">
+                            <div class="col-12 border-bottom"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <h2 class="heading-sm-regular mb-2">Supplier</h2>
+                            </div>
+                            <div class="col-12 collapse show" id="filterSupplier">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="dvLabel">
+                                    <label class="checkbox-container d-flex">
+                                      <span class="d-inline-block">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                      </span>
+                                      <span class="d-inline-block ml-2"> ACE</span>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="dvLabel">
+                                    <label class="checkbox-container d-flex">
+                                      <span class="d-inline-block">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                      </span>
+                                      <span class="d-inline-block ml-2"> Alamo</span>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="dvLabel">
+                                    <label class="checkbox-container d-flex">
+                                      <span class="d-inline-block">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                      </span>
+                                      <span class="d-inline-block ml-2"> Enterprise</span>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="dvLabel">
+                                    <label class="checkbox-container d-flex">
+                                      <span class="d-inline-block">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                      </span>
+                                      <span class="d-inline-block ml-2"> National</span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row py-2">
+                            <div class="col-12 border-bottom"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <h2 class="heading-sm-regular mb-2">Transmission</h2>
+                            </div>
+                            <div class="col-12 collapse show" id="filterTrans">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="dvLabel">
+                                    <label class="checkbox-container d-flex">
+                                      <span class="d-inline-block">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                      </span>
+                                      <span class="d-inline-block ml-2"> Automatic</span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer py-lg-0 mt-lg-3 order-lg-0">
+                        <button type="button" class="btn btn-secondary d-lg-none" data-dismiss="modal">
+                          View Results
+                        </button>
+                        <button type="button" class="btn btn-primary">Reset Filters</button>
+                      </div>
+                      <!-- <div class="d-flex justify-content-center align-items-center d-md-none">
+                        <div class="modal-footer col-6 travelBtn">
+                          
+                        </div>
+                        <div class="modal-footer col-6 filterBtn">
+                          
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="dvCarSelection row flex-nowrap scroll-hoz">
+                <div class="col-4 col-sm-3 mb-3">
+                  <label class="checkbox-container rounded">
+                    <input type="checkbox" checked />
+                    <div class="checkmark d-block p-2 text-center rounded">
+                      <img src="https://cdn.enjoytravel.com/img/site-images/small-car.jpg" alt="" />
+                      <p class="heading-xs-regular">Small</p>
+                      <span class="heading-xxs-regular d-none d-lg-block">from 119,39C</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-4 col-sm-3 mb-3">
+                  <label class="checkbox-container rounded">
+                    <input type="checkbox" />
+                    <div class="checkmark d-block p-2 text-center rounded">
+                      <img src="https://cdn.enjoytravel.com/img/site-images/small-car.jpg" alt="" />
+                      <p class="heading-xs-regular">Medium</p>
+                      <span class="heading-xxs-regular d-none d-lg-block">from 119,39C</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-4 col-sm-3 mb-3">
+                  <label class="checkbox-container rounded">
+                    <input type="checkbox" />
+                    <div class="checkmark d-block p-2 text-center rounded">
+                      <img src="https://cdn.enjoytravel.com/img/site-images/small-car.jpg" alt="" />
+                      <p class="heading-xs-regular">Large</p>
+                      <span class="heading-xxs-regular d-none d-lg-block">from 119,39C</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-4 col-sm-3 mb-3">
+                  <label class="checkbox-container rounded">
+                    <input type="checkbox" />
+                    <div class="checkmark d-block p-2 text-center rounded">
+                      <img src="https://cdn.enjoytravel.com/img/site-images/small-car.jpg" alt="" />
+                      <p class="heading-xs-regular">Luxury</p>
+                      <span class="heading-xxs-regular d-none d-lg-block">from 119,39C</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="dvFound row mb-3">
+                <div class="col-12">
+                  <div class="border rounded p-3">
+                    <span class="heading-sm-medium">83</span> <span>cars found</span>
+                    <a href="" class="ml-3"><i class="fa fa-map-marker"></i> View locations on a map</a>
+                  </div>
+                </div>
+              </div>
+              <div class="dvListing row">
+                <div class="col-12">
+                  <div class="border rounded p-3">
+                    <div class="row">
+                      <div class="dvRibbon">
+                        <span>CHEAPEST!</span>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="dvImage col-12 col-md-5 col-lg-4">
+                            <img
+                              role="button"
+                              data-toggle="modal"
+                              data-target="#dvMoreInfoModal"
+                              class="img-fluid"
+                              src="https://cdn.enjoytravel.com/img/vehicleimages/volkswagen_polo.jpg"
+                            />
+
+                            <button
+                              type="button"
+                              class="dvMoreInfoBtn btn px-0"
+                              data-toggle="modal"
+                              data-target="#dvMoreInfoModal"
+                            >
+                              <i class="fa fa-info-circle"></i> More info
+                            </button>
+                          </div>
+                          <div class="dvInfo col-12 col-md-7 col-lg-5 mt-2 mb-2 my-md-0">
+                            <h2 class="heading-xl-light">Volkswagen Polo</h2>
+                            <p>or similar (Small)</p>
+                            <div class="row">
+                              <div class="col-6 col-md-6 d-flex mb-1 mt-2 align-items-center">
+                                <img src="images/carpage/icons/seat-icon.svg" class="img-fluid small-icon" />
+                                <span class="heading-xs-regular ml-2">x 5</span>
+                              </div>
+                              <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                                <img src="images/carpage/icons/gear-icon.svg" class="img-fluid small-icon" />
+                                <span class="heading-xs-regular ml-2">Automatic</span>
+                              </div>
+                              <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                                <img src="images/carpage/icons/door-icon.svg" class="img-fluid small-icon" />
+                                <span class="heading-xs-regular ml-2">2-4</span>
+                              </div>
+                              <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                                <!-- <i class="fa fa-bus" ></i> -->
+                                <img src="images/carpage/icons/door-icon.svg" class="img-fluid small-icon" />
+                                <span class="heading-xs-regular ml-2">Shuttle </span>
+                              </div>
+                              <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                                <img src="images/carpage/icons/ac-icon.svg" class="img-fluid small-icon" />
+                                <span class="heading-xs-regular ml-2">AirCon</span>
+                              </div>
+                              <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                                <img src="images/carpage/icons/fuel-icon.svg" class="img-fluid small-icon" />
+                                <span class="heading-xs-regular ml-2">Fair Fuel Policy</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dvPrice col-12 col-md-12 col-lg-3">
+                            <div class="row align-items-center mt-2">
+                              <div class="col-7 col-md-6 col-lg-12">
+                                <p class="heading-md-medium">154,93 <i class="fa fa-inr"></i></p>
+                                <p>
+                                  <span class="heading-xxs-medium">22,13 <i class="fa fa-inr"></i> a day</span>
+                                  <span class="heading-xxs-regular">(mandatory fees included)</span>
+                                </p>
+                              </div>
+                              <div class="col-5 col-md-6 col-lg-12">
+                                <button type="button" class="btn btn-primary w-100">View Deal</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dvIncluded row">
+                      <div class="col-12 border-top pt-3 mt-3">
+                        <div class="row justify-content-between align-items-center">
+                          <div class="col-3 col-md-2 order-md-0">
+                            <img width="50" class="img-fluid" src="images/logos/giift-logo-blue.svg" alt="Logo" />
+                          </div>
+                          <div class="col-9 col-md-4 order-md-2 text-right d-flex justify-content-end">
+                            <button
+                              class="btn arrowBtn col-auto d-flex border"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#collapse1"
+                            >
+                              <span class="d-inline-block">Included in the price</span>
+                              <span class="arrow-icon ml-2">
+                                <i class="fa fa-caret-up"></i>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="dvLocation col-12 col-md-6 mt-2 mt-md-0 order-md-1 text-right">
+                            <a href="#"><i class="fa fa-map-marker"></i> Vehicle location:</a>
+                            <span>Dubai, 2128</span>
+                          </div>
+                        </div>
+                        <div class="row collapse mt-3" id="collapse1">
+                          <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                            <i class="fa fa-check mr-2 small-icon"></i>
+                            <p class="heading-xs-regular">Unlimited Mileage</p>
+                          </div>
+                          <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                            <i class="fa fa-check mr-2 small-icon"></i>
+                            <p class="heading-xs-regular">Stay Safe Initiative</p>
+                          </div>
+                          <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                            <i class="fa fa-check mr-2 small-icon"></i>
+                            <p class="heading-xs-regular">Other taxes and service charges</p>
+                          </div>
+                          <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                            <i class="fa fa-check mr-2 small-icon"></i>
+                            <p class="heading-xs-regular">Collision damage waiver</p>
+                          </div>
+                          <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                            <i class="fa fa-check mr-2 small-icon"></i>
+                            <p class="heading-xs-regular">Theft protection</p>
+                          </div>
+                          <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                            <i class="fa fa-check mr-2 small-icon"></i>
+                            <p class="heading-xs-regular">Unlimited Travel</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dvFooter py-3 py-lg-5">
+      <div class="container-lg">
+        <div class="row">
+          <div class="dvSocialIcons col-lg-3 text-center text-lg-left order-lg-0 mb-3 mb-lg-0">
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/facebook.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/linkedin.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Twitter.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Instagram.svg" /></a>
+            <a class="d-inline-block px-1" href="#" target="_blank"> <img src="images/icons/social/Youtube.svg" /></a>
+          </div>
+          <div class="dvLinks col-lg-9 text-center text-lg-right order-lg-1 mb-3 mb-lg-0">
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Earn</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Redeem</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">About Us</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">FAQs</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Terms &amp; Conditions</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Privacy Policy</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Booking Policy</a>
+            <a class="d-inline-block pb-2 pb-lg-0" href="#">Disclaimer</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-thin my-lg-4 d-none d-lg-block"></div>
+      <div class="container-lg">
+        <div class="row align-items-lg-center">
+          <div class="col-sm-12 col-lg-2 text-center text-lg-right order-lg-4 mb-3">
+            <img class="img-fluid footer-logo" src="images/logos/footer-logo.svg" alt="Siddhartha Bank Logo" />
+          </div>
+          <div class="col-sm-12 col-lg-5 text-center text-lg-right order-lg-3 mb-3">
+            <p>
+              ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Siddhartha Rewards. All rights reserved.
+            </p>
+          </div>
+          <div
+            class="col-sm-12 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-2"
+          >
+            <p class="mr-2">Powered By:</p>
+            <div>
+              <img class="img-fluid" src="images/logos/giift-logo.svg" alt="Giift Logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dvMoreInfoModal modal fade pr-lg-0" id="dvMoreInfoModal">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="heading-md-medium">More Information</h4>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times"></i></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="dvListing row">
+              <div class="col-12">
+                <div class="border rounded p-3">
+                  <div class="row">
+                    <div class="dvRibbon">
+                      <span>CHEAPEST!</span>
+                    </div>
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="dvImage col-12 col-md-5 col-lg-4">
+                          <img
+                            data-toggle="modal"
+                            data-target="#dvMoreInfoModal"
+                            class="img-fluid"
+                            src="https://cdn.enjoytravel.com/img/vehicleimages/volkswagen_polo.jpg"
+                          />
+                          <!-- <button
+                            type="button"
+                            class="dvMoreInfo btn px-0"
+                            data-toggle="modal"
+                            data-target="#dvMoreInfoModal"
+                          >
+                            <i class="fa fa-info-circle"></i> More info
+                          </button> -->
+                        </div>
+                        <div class="dvInfo col-12 col-md-7 col-lg-5 mt-2 mb-2 my-md-0">
+                          <h2 class="heading-xl-light">Volkswagen Polo</h2>
+                          <p>or similar (Small)</p>
+                          <div class="row">
+                            <div class="col-6 col-md-6 d-flex mb-1 mt-2 align-items-center">
+                              <img src="images/carpage/icons/seat-icon.svg" class="img-fluid small-icon" />
+                              <span class="heading-xs-regular ml-2">x 5</span>
+                            </div>
+                            <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                              <img src="images/carpage/icons/gear-icon.svg" class="img-fluid small-icon" />
+                              <span class="heading-xs-regular ml-2">Automatic</span>
+                            </div>
+                            <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                              <img src="images/carpage/icons/door-icon.svg" class="img-fluid small-icon" />
+                              <span class="heading-xs-regular ml-2">2-4</span>
+                            </div>
+                            <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                              <!-- <i class="fa fa-bus" ></i> -->
+                              <img src="images/carpage/icons/door-icon.svg" class="img-fluid small-icon" />
+                              <span class="heading-xs-regular ml-2">Shuttle </span>
+                            </div>
+                            <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                              <img src="images/carpage/icons/ac-icon.svg" class="img-fluid small-icon" />
+                              <span class="heading-xs-regular ml-2">AirCon</span>
+                            </div>
+                            <div class="col-6 col-md-6 mb-1 mt-2 d-flex align-items-center">
+                              <img src="images/carpage/icons/fuel-icon.svg" class="img-fluid small-icon" />
+                              <span class="heading-xs-regular ml-2">Fair Fuel Policy</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dvPrice col-12 col-md-12 col-lg-3">
+                          <div class="row align-items-center mt-2">
+                            <div class="col-7 col-md-6 col-lg-12">
+                              <p class="heading-md-medium">154,93 <i class="fa fa-inr"></i></p>
+                              <p>
+                                <span class="heading-xxs-medium">22,13 <i class="fa fa-inr"></i> a day</span>
+                                <span class="heading-xxs-regular">(mandatory fees included)</span>
+                              </p>
+                            </div>
+                            <div class="col-5 col-md-6 col-lg-12">
+                              <button type="button" class="btn btn-primary w-100">View Deal</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dvIncluded row">
+                    <div class="col-12 border-top pt-3 mt-3">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col-3 col-md-2 order-md-0">
+                          <img width="50" class="img-fluid" src="images/logos/giift-logo-blue.svg" alt="Logo" />
+                        </div>
+                        <div class="col-9 col-md-4 order-md-2 text-right d-flex justify-content-end">
+                          <button
+                            class="btn arrowBtn col-auto d-flex border"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapse2"
+                          >
+                            <span class="d-inline-block">Included in the price</span>
+                            <span class="arrow-icon ml-2">
+                              <i class="fa fa-caret-up"></i>
+                            </span>
+                          </button>
+                        </div>
+                        <div class="col-12 col-md-6 mt-2 mt-md-0 order-md-1 text-right">
+                          <a href="#"><i class="fa fa-map-marker"></i> Vehicle location:</a>
+                          <span>Dubai, 2128</span>
+                        </div>
+                      </div>
+                      <div class="row collapse mt-3" id="collapse2">
+                        <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                          <i class="fa fa-check mr-2 small-icon"></i>
+                          <p class="heading-xs-regular">Unlimited Mileage</p>
+                        </div>
+                        <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                          <i class="fa fa-check mr-2 small-icon"></i>
+                          <p class="heading-xs-regular">Stay Safe Initiative</p>
+                        </div>
+                        <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                          <i class="fa fa-check mr-2 small-icon"></i>
+                          <p class="heading-xs-regular">Other taxes and service charges</p>
+                        </div>
+                        <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                          <i class="fa fa-check mr-2 small-icon"></i>
+                          <p class="heading-xs-regular">Collision damage waiver</p>
+                        </div>
+                        <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                          <i class="fa fa-check mr-2 small-icon"></i>
+                          <p class="heading-xs-regular">Theft protection</p>
+                        </div>
+                        <div class="col-6 col-md-4 d-flex align-items-center mb-3">
+                          <i class="fa fa-check mr-2 small-icon"></i>
+                          <p class="heading-xs-regular">Unlimited Travel</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+      //custom select
+      document.addEventListener("mousedown", function (event) {
+        var dropdowns = document.querySelectorAll(".selectDropdown.toggle");
+        dropdowns.forEach(function (dropdown) {
+          if (!dropdown.contains(event.target)) {
+            dropdown.classList.remove("toggle");
+            dropdown.previousElementSibling.classList.remove("toggle");
+          }
+        });
+      });
+      var select = document.querySelectorAll(".select");
+      var index = 1;
+      select.forEach(function (e) {
+        e.querySelector(".selectBtn").addEventListener("mousedown", function (event) {
+          event.stopPropagation();
+          var dropdown = this.nextElementSibling;
+          dropdown.classList.toggle("toggle");
+          dropdown.style.zIndex = index++;
+          this.classList.toggle("toggle");
+        });
+        e.querySelectorAll(".option").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var select = this.closest(".select");
+            select.querySelector(".selectDropdown").classList.remove("toggle");
+            select.querySelector(".selectBtn").classList.remove("toggle");
+            select.querySelector(".selectBtn").setAttribute("data-type", this.getAttribute("data-type"));
+            select.querySelector(".selectBtn").innerText = this.innerText;
+          });
+        });
+      });
+      //custom select
+    </script>
+
+    <script>
+      //datepicker for hotel search form in modify button
+      $(function () {
+        $("#datepicker,#datepicker2").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          yearRange: "1900:2025",
+          // showButtonPanel: true,
+          dateFormat: "dd-mm-yy",
+          //if you want current date selection only
+          minDate: -0,
+          // maxDate: -0,
+        });
+      });
+      //datepicker for hotel search form in modify button
+    </script>
+
+    <script>
+      $(function () {
+        $("#number").selectmenu({}).selectmenu("menuWidget").addClass("overflow");
+        $("#number2").selectmenu({}).selectmenu("menuWidget").addClass("overflow");
+      });
+    </script>
+
+    <script>
+      /*toggling dvQuoteModal*/
+      document.addEventListener("DOMContentLoaded", function () {
+        const carInfo = document.querySelector(".dvCarList .dvCarInfo");
+        const editButton = document.querySelector(".dvCarList .dvCarInfo .editBtn");
+        const closeModalButton = document.querySelector(".dvQuoteModal .closeBtn");
+        const dvQuoteModal = document.querySelector(".dvQuoteModal");
+
+        editButton.addEventListener("click", function () {
+          dvQuoteModal.classList.remove("d-none");
+          carInfo.classList.add("d-none");
+        });
+
+        closeModalButton.addEventListener("click", function () {
+          carInfo.classList.remove("d-none");
+          dvQuoteModal.classList.add("d-none");
+        });
+      });
+      /*toggling dvQuoteModal*/
+    </script>
+
+    <script>
+      //arrowBtn - this will work on all bootstrap single collapse, just add arrowBtn className on buttons
+      (() => {
+        const arrowBtn = document.querySelectorAll(".arrowBtn");
+        arrowBtn.forEach((item) => {
+          let x = item.classList;
+          x.add("collapsed");
+          item.classList.contains("collapsed") ? x : arrowBtn;
+        });
+      })();
+      //arrowBtn - this will work on all bootstrap single collapse, just add arrowBtn className on buttons
+    </script>
+  </body>
+</html>

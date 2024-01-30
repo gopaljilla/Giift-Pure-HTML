@@ -874,6 +874,23 @@ li li.show > .dropdown-toggle:after {
 }
 /*=========[ CUSTOM SELECT ]=========*/
 
+/*=========[ JQUERY UI SELECTMENU ]=========*/
+.ui-selectmenu-button.ui-button {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.25rem !important;
+  font-size: 0.875rem;
+  border: 1px solid #e0e2ea;
+  resize: none;
+  padding: 0.75rem;
+}
+.ui-selectmenu-menu .overflow {
+  max-height: 150px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+/*=========[ JQUERY UI SELECTMENU ]=========*/
+
 /*=========[ JQUERY UI RANGE SLIDER ]=========*/
 /*wrapper height*/
 .dvRangeSlider .ui-slider-horizontal {
