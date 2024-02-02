@@ -1,4 +1,23 @@
-﻿/*=========[ CARLIST PAGE ]=========*/
+﻿/*=========[ GLOBAL FOR CAR PAGES ONLY ]=========*/
+/*car steps section*/
+.dvCarSteps .circle {
+  width: 30px;
+  height: 30px;
+  background-color: var(--bg-section);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dvCarSteps .circle-active {
+  background-color: var(--primary-colour);
+  color: #fff;
+}
+.dvCarSteps .text-active {
+  color: var(--primary-colour);
+}
+/*car steps section*/
+
 /* smallicon 
 purposely kept without parent class. small-icon class are using in multiple places on this page
 */
@@ -12,60 +31,31 @@ purposely kept without parent class. small-icon class are using in multiple plac
 purposely kept without parent class. Ribbon Section is using in multiple places on this page
 */
 .dvRibbon {
-  width: 113px;
-  height: 100px;
-  overflow: hidden;
   position: absolute;
   top: 0;
-  right: 15px;
+  right: 1rem;
   z-index: 2;
 }
 .dvRibbon span {
-  width: 193px;
-  position: absolute;
   display: block;
   text-align: center;
-  color: #fff;
-  background: #000;
-  z-index: 3;
-  font-size: 12px;
-  font-weight: 500;
-  height: 25px;
-  line-height: 2;
-  left: -13px;
-  top: 19px;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  color: var(--secondary-colour);
+  background: var(--bg-section);
+  font-size: 10px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0 0 0 7px;
+  font-weight: 400;
 }
 /* ribbon section */
 
 /* moreInfo button */
-.dvCarList .dvMoreInfoBtn {
+.dvMoreInfoBtn {
   color: var(--primary-colour);
 }
 /* moreInfo button */
+/*=========[ GLOBAL FOR CAR PAGES ONLY ]=========*/
 
-/*car steps section*/
-.dvCarList .dvCarSteps .circle {
-  width: 30px;
-  height: 30px;
-  background-color: var(--bg-section);
-  /* color: #fff; */
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.dvCarList .dvCarSteps .circle-active {
-  background-color: var(--primary-colour);
-  color: #fff;
-}
-.dvCarList .dvCarSteps .text-active {
-  color: var(--primary-colour);
-}
-/*car steps section*/
-
+/*=========[ CARLIST PAGE ]=========*/
 /*filter button only for mobile*/
 .dvCarList .dvFilterBtn {
   position: fixed;
@@ -147,8 +137,37 @@ purposely kept without parent class. Ribbon Section is using in multiple places 
 .dvCarList .dvIncluded .dvLocation a {
   color: var(--primary-colour);
 }
-
 /*=========[ CARLIST PAGE ]=========*/
+
+/*=========[ CARDETAILS PAGE ]=========*/
+.dvCarDetails .dvBookingSummary .card {
+  border-radius: 0;
+}
+.dvCarDetails .dvBookingSummary .card-header {
+  background-color: var(--bg-section);
+}
+.dvCarDetails .dvBookingSummary .dvPayable .heading-sm-medium,
+.dvCarDetails .dvBookingSummary .dvPayable .heading-sm-bold {
+  color: var(--primary-colour);
+}
+.dvCarDetails .dvPayOption .heading-sm-medium {
+  color: var(--primary-colour);
+}
+.dvCarDetails .dvPayOption .fa-check {
+  color: var(--text-success);
+}
+.dvCarDetails .dvItem .heading-md-medium,
+.dvCarDetails .dvItem .fa-shield {
+  color: var(--primary-colour);
+}
+.dvCarDetails .dvPayOption .tickmark {
+  font-size: 1.5rem;
+  display: flex;
+}
+.dvCarDetails .dvPayOption .checkmark {
+  margin-top: 15px;
+}
+/*=========[ CARDETAILS PAGE ]=========*/
 
 @media (min-width: 576px) {
   /* dvMoreInfoModal  */

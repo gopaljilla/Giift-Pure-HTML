@@ -42,4 +42,7 @@
   --secondary-colour: #000;
   --bg-section: #f2f2f2;
   --content-text-colour: #666;
+  --text-success: #28a745;
+  --text-warning: #ffc107;
+  --text-danger: #dc3545;
 }
