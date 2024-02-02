@@ -274,7 +274,7 @@
         </div>
       </div>
 
-      <div class="dvCarDetails pb-5">
+      <div class="dvCarPayment dvCarDetails pb-5">
         <div class="container-lg">
           <div class="dvCarSteps row py-4 justify-content-between justify-content-sm-center">
             <div class="col-3 d-flex flex-column flex-lg-row text-center align-items-center justify-content-center">
@@ -289,17 +289,15 @@
             <div
               class="col-6 col-sm-3 col-lg-3 d-flex flex-column flex-lg-row text-center align-items-center justify-content-center"
             >
-              <p class="circle circle-active mr-lg-2 heading-xs-regular">2</p>
-              <p class="d-lg-flex align-items-lg-center text-active">
-                <span class="d-none d-sm-block mr-lg-1">View</span> Deal
-              </p>
+              <p class="circle mr-lg-2 heading-xs-regular">2</p>
+              <p class="d-lg-flex align-items-lg-center"><span class="d-none d-sm-block mr-lg-1">View</span> Deal</p>
             </div>
             <div class="col-sm-1 d-sm-flex align-items-sm-center justify-content-sm-center d-none d-sm-block px-sm-0">
               <div class="border w-100"></div>
             </div>
             <div class="col-3 d-flex flex-column flex-lg-row text-center align-items-center justify-content-center">
-              <p class="circle mr-lg-2 heading-xs-regular">3</p>
-              <p class="d-lg-flex align-items-lg-center">
+              <p class="circle circle-active mr-lg-2 heading-xs-regular">3</p>
+              <p class="d-lg-flex align-items-lg-center text-active">
                 <span class="d-none d-sm-block mr-lg-1">Booking &amp;</span> Payment
               </p>
             </div>
@@ -508,256 +506,53 @@
                 </div>
               </div>
             </div>
-            <div class="dvPaymentOptions col-lg-8">
+            <div class="col-lg-8">
               <div class="row">
                 <div class="col-12 mt-3 mt-md-0">
-                  <h2 class="heading-md-bold"><i class="fa fa-lock"></i> Payment Options</h2>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="dvPayOption col-sm-6">
-                  <div class="dvLabel">
-                    <label class="checkbox-container border rounded-lg mt-3">
-                      <div class="col-12 d-flex align-items-center p-3">
-                        <span class="d-inline-block">
-                          <input type="radio" name="payment" checked />
-                          <span class="checkmark"></span>
-                        </span>
-                        <span class="heading-sm-medium text-uppercase ml-2">Pay Now:</span>
-                        <span class="heading-sm-medium mx-2"> <i class="fa fa-inr"></i>154,03 </span>
-                        <span class="tickmark"><i class="fa fa-check"></i></span>
-                      </div>
-                      <div class="col-12 border-top p-3">
-                        <p class="">
-                          Select this option to pay your car hire balance in full.. Inc.
-                          <strong class="font-weight-bold">free cancellation</strong> up to
-                          <strong class="font-weight-bold">48 hours</strong> before pick up!
-                        </p>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-                <div class="dvPayOption col-sm-6 mb-3">
-                  <div class="dvLabel">
-                    <label class="checkbox-container border rounded-lg mt-3">
-                      <div class="col-12 d-flex align-items-center p-3">
-                        <span class="d-inline-block">
-                          <input type="radio" name="payment" />
-                          <span class="checkmark"></span>
-                        </span>
-                        <span class="heading-sm-medium text-uppercase ml-2">Pay Now:</span>
-                        <span class="heading-sm-medium mx-2"> <i class="fa fa-inr"></i>154,03 </span>
-                        <span class="tickmark"><i class="fa fa-check"></i></span>
-                      </div>
-                      <div class="col-12 border-top p-3">
-                        <p class="">
-                          Select this option to pay your car hire balance in full.. Inc.
-                          <strong class="font-weight-bold">free cancellation</strong> up to
-                          <strong class="font-weight-bold">48 hours</strong> before pick up!
-                        </p>
-                      </div>
-                    </label>
+                  <div class="border bg-lightgray rounded-top p-3">
+                    <h2 class="heading-sm-medium"><i class="fa fa-user-circle-o"></i> Driver Details</h2>
                   </div>
                 </div>
                 <div class="col-12">
-                  <button type="button" class="btn btn-primary w-100" data-toggle="modal" data-target="#dvWarningModal">
-                    Continue to Payment <i class="fa fa-caret-right"></i>
-                  </button>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="dvItem col-12 mb-3">
                   <div class="border p-3">
-                    <div class="dvRibbon">
-                      <span class="text-uppercase">Recommended</span>
-                    </div>
                     <div class="row">
-                      <div class="col-1 col-sm-auto pr-0">
-                        <i class="fa fa-shield"></i>
+                      <div class="col-12 col-sm-6 mb-3">
+                        <label class="heading-xxs-regular">First Name*</label>
+                        <input type="text" class="form-control" placeholder="first name" />
                       </div>
-                      <div class="col-11 mb-2">
-                        <h2 class="heading-md-medium">Excess Protection</h2>
+                      <div class="col-12 col-sm-6 mb-3">
+                        <label class="heading-xxs-regular">Surname*</label>
+                        <input type="text" class="form-control" placeholder="surname" />
+                      </div>
+                      <div class="col-12 col-sm-6 mb-3">
+                        <label class="heading-xxs-regular">Email*</label>
+                        <input type="text" class="form-control" placeholder="email" />
+                      </div>
+                      <div class="col-12 col-sm-6 mb-3">
+                        <label class="heading-xxs-regular">Phone*</label>
+                        <input type="text" class="form-control" placeholder="phone" />
+                      </div>
+                      <div class="col-12 col-sm-6 mb-3">
+                        <label class="heading-xxs-regular">Flight Number*</label>
+                        <input type="text" class="form-control" placeholder="flight number" />
                       </div>
                       <div class="col-12">
-                        <p>
-                          Have peace of mind and protect yourself against any charges that maybe applied if you damage
-                          the vehicle by taking Enjoy's excess protection.
-                        </p>
-                        <button
-                          type="button"
-                          class="dvMoreInfoBtn btn px-0"
-                          data-toggle="modal"
-                          data-target="#dvMoreInfoModal"
-                        >
-                          <i class="fa fa-info-circle"></i> More info
-                        </button>
-                      </div>
-                    </div>
-                    <div class="row align-items-center">
-                      <div class="col-6 col-sm-9">
-                        <p class="heading-md-bold"><i class="fa fa-inr"></i>154,93</p>
-                      </div>
-                      <div class="col-6 col-sm-3 text-right">
-                        <button type="button" class="btn btn-primary toggle-button w-100" data-action="add">
-                          + ADD
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-secondary toggle-button w-100"
-                          data-action="remove"
-                          style="display: none"
-                        >
-                          - REMOVE
-                        </button>
+                        <div class="dvLabel d-flex justify-content-between mb-2">
+                          <label class="checkbox-container d-flex align-items-center">
+                            <span class="d-inline-block">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </span>
+                            <span class="d-inline-block ml-2"
+                              >I have read and accept the
+                              <a href="" class="font-weight-bold">Terms &amp; Conditions</a></span
+                            >
+                          </label>
+                        </div>
+                        <button class="btn btn-primary">Make Payment</button>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="dvItem col-12 mb-3">
-                  <div class="border p-3">
-                    <div class="dvRibbon">
-                      <span class="text-uppercase">Recommended</span>
-                    </div>
-                    <div class="row">
-                      <div class="col-1 col-sm-auto pr-0">
-                        <i class="fa fa-shield"></i>
-                      </div>
-                      <div class="col-11 mb-2">
-                        <h2 class="heading-md-medium">Cancellation Protection (Prepay)</h2>
-                      </div>
-                      <div class="col-12">
-                        <p>
-                          If you pay in full online for your rental, you will normally have FREE cancellation, meaning
-                          you can cancel your booking and receive a full refund up to 48 hours prior to the start of
-                          your rental. This Cancellation Protect (Prepay) option allows cancellations to be made up
-                          until the time of collection.
-                        </p>
-                        <button
-                          type="button"
-                          class="dvMoreInfoBtn btn px-0"
-                          data-toggle="modal"
-                          data-target="#dvMoreInfoModal"
-                        >
-                          <i class="fa fa-info-circle"></i> More info
-                        </button>
-                      </div>
-                    </div>
-                    <div class="row align-items-center">
-                      <div class="col-6 col-sm-9">
-                        <p class="heading-md-bold"><i class="fa fa-inr"></i>110,89</p>
-                      </div>
-                      <div class="col-6 col-sm-3 text-right">
-                        <button type="button" class="btn btn-primary toggle-button w-100" data-action="add">
-                          + ADD
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-secondary toggle-button w-100"
-                          data-action="remove"
-                          style="display: none"
-                        >
-                          - REMOVE
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="dvAdditionalEquipment row">
-                <div class="col-12 mb-3">
-                  <div class="border rounded p-3">
-                    <p class="mb-3">
-                      Please note these additional extras are payable locally and do not form part of the rental price
-                      shown. Prices are displayed by pressing the title of each extra.
-                    </p>
-                    <div class="dvForm row">
-                      <div class="col-12">
-                        <div class="row align-items-center">
-                          <div class="col-sm-3 col-md-4">
-                            <select name="speed" id="number">
-                              <option>Slower</option>
-                              <option>Slow</option>
-                              <option selected="selected">Medium</option>
-                              <option>Fast</option>
-                              <option>Faster</option>
-                            </select>
-                          </div>
-                          <div class="col-sm-6 col-md-4 my-2 my-sm-0">
-                            <p>Child Booster Seat</p>
-                            <button
-                              type="button"
-                              class="dvMoreInfoBtn btn p-0"
-                              data-toggle="modal"
-                              data-target="#dvMoreInfoModal"
-                            >
-                              <i class="fa fa-info-circle"></i> More info
-                            </button>
-                          </div>
-                          <div class="col-sm-3 col-md-4"><i class="fa fa-inr"></i>154,93 (per rental)</div>
-                        </div>
-                        <div class="row my-3">
-                          <div class="border-top col-12"></div>
-                        </div>
-                        <div class="row align-items-center">
-                          <div class="col-sm-3 col-md-4">
-                            <select name="speed" id="number2">
-                              <option>Slower</option>
-                              <option>Slow</option>
-                              <option selected="selected">Medium</option>
-                              <option>Fast</option>
-                              <option>Faster</option>
-                            </select>
-                          </div>
-                          <div class="col-sm-6 col-md-4 my-2 my-sm-0">
-                            <p>Child Booster Seat</p>
-                            <button
-                              type="button"
-                              class="dvMoreInfoBtn btn p-0"
-                              data-toggle="modal"
-                              data-target="#dvMoreInfoModal"
-                            >
-                              <i class="fa fa-info-circle"></i> More info
-                            </button>
-                          </div>
-                          <div class="col-sm-3 col-md-4"><i class="fa fa-inr"></i>154,93 (per rental)</div>
-                        </div>
-                        <div class="row my-3">
-                          <div class="border-top col-12"></div>
-                        </div>
-                        <div class="row align-items-center">
-                          <div class="col-sm-3 col-md-4">
-                            <select name="speed" id="number3">
-                              <option>Slower</option>
-                              <option>Slow</option>
-                              <option selected="selected">Medium</option>
-                              <option>Fast</option>
-                              <option>Faster</option>
-                            </select>
-                          </div>
-                          <div class="col-sm-6 col-md-4 my-2 my-sm-0">
-                            <p>Child Booster Seat</p>
-                            <button
-                              type="button"
-                              class="dvMoreInfoBtn btn p-0"
-                              data-toggle="modal"
-                              data-target="#dvMoreInfoModal"
-                            >
-                              <i class="fa fa-info-circle"></i> More info
-                            </button>
-                          </div>
-                          <div class="col-sm-3 col-md-4"><i class="fa fa-inr"></i>154,93 (per rental)</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button type="button" class="btn btn-primary w-100" data-toggle="modal" data-target="#dvWarningModal">
-                    Continue to Payment <i class="fa fa-caret-right"></i>
-                  </button>
                 </div>
               </div>
             </div>

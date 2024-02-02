@@ -169,6 +169,12 @@ purposely kept without parent class. Ribbon Section is using in multiple places 
 }
 /*=========[ CARDETAILS PAGE ]=========*/
 
+/*=========[ CAR PAYMENT PAGE ]=========*/
+.dvCarPayment .bg-lightgray {
+  background-color: var(--bg-section);
+}
+/*=========[ CAR PAYMENT PAGE ]=========*/
+
 @media (min-width: 576px) {
   /* dvMoreInfoModal  */
   .dvMoreInfoModal .modal-dialog {
