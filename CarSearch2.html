@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/shop.css" />
     <link rel="stylesheet" href="css/flight.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
-    <link href="css/CarPage.css" rel="stylesheet" type="text/css" />
+    <link href="css/car.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!--
@@ -23,32 +23,7 @@
     range slider
     star ratings
     -->
-    <style>
-      .fade-in {
-        animation: fadeIn 0.5s ease-in-out forwards;
-        display: block;
-      }
-      .fade-out {
-        animation: fadeOut 0.5s ease-in-out forwards;
-        display: none;
-      }
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      @keyframes fadeOut {
-        from {
-          opacity: 1;
-        }
-        to {
-          opacity: 0;
-        }
-      }
-    </style>
+
     <div class="dvMain">
       <div class="dvBlackStripe"></div>
       <div class="dvHeader shadow-sm sticky-top bg-white">
@@ -322,7 +297,7 @@
 
       <div class="dvCarSearch pb-5">
         <div class="container-lg">
-          <div class="row">
+          <div class="dvForm row">
             <div class="col-12 col-sm-6 col-lg-4 col-xl-4 mb-3">
               <label class="heading-xxs-regular">Pick-Up Location?</label>
               <div class="input-group">
@@ -408,9 +383,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-xl-3 text-xl-right mt-2 mt-xl-0">
-                  <button class="btn btn-primary" type="submit" onclick="window.location.href='CarListNew.aspx';">
-                    Search Car
-                  </button>
+                  <button class="btn btn-primary" type="button">Search Car</button>
                 </div>
               </div>
             </div>

@@ -175,6 +175,33 @@ purposely kept without parent class. Ribbon Section is using in multiple places 
 }
 /*=========[ CAR PAYMENT PAGE ]=========*/
 
+/*=========[ CAR SEARCH PAGE ]=========*/
+.dvCarSearch .dvForm .fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  display: block;
+}
+.dvCarSearch .dvForm .fade-out {
+  animation: fadeOut 0.5s ease-in-out forwards;
+  display: none;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*=========[ CAR SEARCH PAGE ]=========*/
+
 @media (min-width: 576px) {
   /* dvMoreInfoModal  */
   .dvMoreInfoModal .modal-dialog {

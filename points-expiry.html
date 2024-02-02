@@ -170,18 +170,23 @@
                     <div class="row">
                       <div class="col-12 mb-3 px-0">
                         <div class="row align-items-center">
-                          <div class="col-8 col-lg-10">
+                          <div class="col-7 col-sm-9 col-lg-10">
                             <p class="heading-xs-medium">Please select the year to view your points expiry schedule:</p>
                           </div>
-                          <div class="col-4 col-lg-2">
-                            <div class="select">
-                              <div class="selectBtn form-control" data-type="firstOption">2023</div>
-                              <div class="selectDropdown">
-                                <div class="option" data-type="firstOption">2023</div>
-                                <div class="option" data-type="secondOption">2024</div>
-                                <div class="option" data-type="thirdOption">2025</div>
-                              </div>
-                            </div>
+                          <div class="col-5 col-sm-3 col-lg-2">
+                            <select name="number" id="number">
+                              <option selected="selected">2023</option>
+                              <option>2022</option>
+                              <option>2021</option>
+                              <option>2022</option>
+                              <option>2021</option>
+                              <option>2022</option>
+                              <option>2021</option>
+                              <option>2022</option>
+                              <option>2021</option>
+                              <option>2022</option>
+                              <option>2021</option>
+                            </select>
                           </div>
                           <!-- <div class="col-sm"></div> -->
                         </div>
@@ -487,37 +492,7 @@
     </script>
 
     <script>
-      //custom select
-      document.addEventListener("mousedown", function (event) {
-        var dropdowns = document.querySelectorAll(".selectDropdown.toggle");
-        dropdowns.forEach(function (dropdown) {
-          if (!dropdown.contains(event.target)) {
-            dropdown.classList.remove("toggle");
-            dropdown.previousElementSibling.classList.remove("toggle");
-          }
-        });
-      });
-      var select = document.querySelectorAll(".select");
-      var index = 1;
-      select.forEach(function (e) {
-        e.querySelector(".selectBtn").addEventListener("mousedown", function (event) {
-          event.stopPropagation();
-          var dropdown = this.nextElementSibling;
-          dropdown.classList.toggle("toggle");
-          dropdown.style.zIndex = index++;
-          this.classList.toggle("toggle");
-        });
-        e.querySelectorAll(".option").forEach(function (b) {
-          b.addEventListener("click", function () {
-            var select = this.closest(".select");
-            select.querySelector(".selectDropdown").classList.remove("toggle");
-            select.querySelector(".selectBtn").classList.remove("toggle");
-            select.querySelector(".selectBtn").setAttribute("data-type", this.getAttribute("data-type"));
-            select.querySelector(".selectBtn").innerText = this.innerText;
-          });
-        });
-      });
-      //custom select
+      $("#number").selectmenu({}).selectmenu("menuWidget").addClass("overflow");
     </script>
   </body>
 </html>
