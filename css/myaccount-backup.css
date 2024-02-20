@@ -159,10 +159,23 @@
 
 /*=========[ PROFILE PAGE ]=========*/
 
-.dvProfile .bg-lightgray {
+.dvProfile .bg-lightgrey {
   background: var(--bg-section);
 }
 
+.dvProfile .sum-box {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.dvProfile .sum-box .accord {
+  background: url("../images/icons/arrows/drop-up.svg") no-repeat 100%;
+}
+
+.dvProfile .sum-box .accord.collapsed {
+  background: url("../images/icons/arrows/drop-down.svg") no-repeat 100%;
+}
 /*=========[ PROFILE PAGE ]=========*/
 
 /*=========[ MANAGE PAGE ]=========*/
@@ -170,51 +183,20 @@
   background: var(--bg-section);
 }
 
-.dvManage .accordion .card {
-  border-radius: 0.25rem;
+.dvManage .sum-box {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
-.dvManage .accordion .card-header {
-  margin-bottom: 0;
+.dvManage .sum-box .accord {
+  background: url("../images/icons/arrows/drop-up.svg") no-repeat 100%;
 }
 
-.dvManage .accordion .card-body {
-  background: var(--bg-section);
-  border-radius: 0.25rem;
+.dvManage .sum-box .accord.collapsed {
+  background: url("../images/icons/arrows/drop-down.svg") no-repeat 100%;
 }
-
-.dvManage .accordion span.d-inline-block {
-  min-height: 42px;
-}
-
 /*=========[ MANAGE PAGE ]=========*/
-
-/*=========[ VOUCHER PAGE ]=========*/
-
-.dvVoucher .vouch-main {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.dvVoucher .bg-head {
-  background: var(--primary-colour);
-}
-
-.dvVoucher .bg-head img {
-  width: 200px;
-}
-
-.dvVoucher .bg-black {
-  background: var(--secondary-colour);
-  color: #fff;
-  border-radius: 0.25rem 0.25rem 0 0;
-}
-
-.dvVoucher .bor-bg {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.25rem;
-}
-
-/*=========[ VOUCHER PAGE ]=========*/
 
 /*=========[ MEDIA QUERIES ]=========*/
 @media (min-width: 576px) {

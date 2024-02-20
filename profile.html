@@ -80,7 +80,7 @@
         </div>
       </div>
 
-      <div class="dvAccDesign">
+      <div class="dvMember">
         <div class="d-md-block d-none">
           <div class="align-items-center bg-acc d-flex justify-content-center">
             <div class="d-flex justify-content-center align-items-center flex-column">
@@ -110,7 +110,7 @@
         </div>
       </div>
 
-      <div class="dvAccMenu">
+      <div class="dvAccountMenu">
         <div class="container-lg">
           <div class="row">
             <div class="col-4 col-xl-2 pt-3 pb-2">
@@ -134,9 +134,7 @@
               </a>
             </div>
             <div class="col-4 col-xl-2 pt-3 pb-2">
-              <a class="nav-link d-flex justify-content-around text-center" href="order-history.html">
-                Order History
-              </a>
+              <a class="nav-link d-flex justify-content-around text-center" href="Orderhistory.html"> Order History </a>
             </div>
             <div class="col-4 col-xl-2 pt-3 pb-2">
               <a class="nav-link d-flex justify-content-around text-center active" href="profile.html"> Profile </a>
@@ -160,90 +158,83 @@
         </div>
       </div>
 
-      <div class="dvProfile py-5">
+      <div class="dvProfile pb-5">
         <div class="container-lg">
           <div class="row">
             <div class="col-12">
-              <div class="bg-lightgrey p-3">
-                <div class="" id="accordion">
-                  <!-- First Panel -->
-                  <div class="sum-box mb-3">
-                    <div>
-                      <h2
-                        class="heading-xs-bold collapsed d-flex accord"
-                        data-toggle="collapse"
-                        data-target="#collapseOne"
-                        aria-expanded="false"
-                        aria-controls="collapseOne"
-                      >
-                        Contact Details
+              <div class="bg-lightgray p-3">
+                <div class="accordion" id="manage-accordion">
+                  <div class="card mb-3">
+                    <div class="card-header p-0">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-block text-left p-3 heading-sm-medium"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapse1"
+                        >
+                          Contact Details
+                          <span class="arrow-icon">
+                            <i class="fa fa-caret-up"></i>
+                          </span>
+                        </button>
                       </h2>
                     </div>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div class="panel-body">
-                        <div class="mt-4 row">
+
+                    <div id="collapse1" class="collapse show" data-parent="#manage-accordion">
+                      <div class="card-body p-3">
+                        <div class="row">
                           <div class="form-group col-sm-3">
-                            <label class="heading-xs-regular"
-                              >Name<br />
-                              <span>John Doe</span>
-                            </label>
+                            <p class="heading-xs-regular">Name</p>
+                            <p class="heading-xs-regular">John Doe</p>
                           </div>
                           <div class="form-group col-sm-3">
-                            <label class="heading-xs-regular"
-                              >Mobile No.<br />
-                              <span>1234567890</span>
-                            </label>
+                            <p class="heading-xs-regular">Mobile No.</p>
+                            <p class="heading-xs-regular">123457890</p>
                           </div>
                           <div class="form-group col-sm-3">
-                            <label class="heading-xs-regular"
-                              >E-mail ID<br />
-                              <span>test@example.com</span>
-                            </label>
+                            <p class="heading-xs-regular">E-mail ID</p>
+                            <p class="heading-xs-regular">test@example.com</p>
                           </div>
                           <div class="form-group col-sm-3">
-                            <label class="heading-xs-regular"
-                              >Gender<br />
-                              <span>Male</span>
-                            </label>
+                            <p class="heading-xs-regular">Gender</p>
+                            <p class="heading-xs-regular">Male</p>
                           </div>
                           <div class="form-group col-sm-3">
-                            <label class="heading-xs-regular"
-                              >Nationality<br />
-                              <span>Indian</span>
-                            </label>
+                            <p class="heading-xs-regular">Nationality</p>
+                            <p class="heading-xs-regular">Indian</p>
                           </div>
                           <div class="form-group col-sm-3">
-                            <label class="heading-xs-regular"
-                              >Address<br />
-                              <span>Address line 1, Address line 2</span>
-                            </label>
+                            <p class="heading-xs-regular">Address</p>
+                            <p class="heading-xs-regular">Address line 1, Address line 2</p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Second Panel -->
-                  <div class="sum-box">
-                    <div>
-                      <h2
-                        class="heading-xs-bold collapsed d-flex accord"
-                        data-toggle="collapse"
-                        data-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        Change Password
+                  <div class="card mb-3">
+                    <div class="card-header p-0">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-block text-left p-3 collapsed heading-sm-medium"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapse2"
+                        >
+                          Change Password
+                          <span class="arrow-icon">
+                            <i class="fa fa-caret-up"></i>
+                          </span>
+                        </button>
                       </h2>
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="panel-body">
+                    <div id="collapse2" class="collapse" data-parent="#manage-accordion">
+                      <div class="card-body p-3">
                         <div class="row mt-4">
                           <div class="col-lg-6">
                             <div class="row">
-                              <div class="col-sm-4">
-                                <label class="heading-xs-regular mt-2">Current Password</label>
-                              </div>
-                              <div class="col-sm-8 position-relative fontawesome">
+                              <div class="col-12 position-relative fontawesome">
+                                <label class="heading-xs-medium">Current Password</label>
                                 <div class="input-group mb-3">
                                   <input
                                     autocomplete="off"
@@ -258,10 +249,8 @@
                               </div>
                             </div>
                             <div class="row">
-                              <div class="col-sm-4">
-                                <label class="heading-xs-regular mt-2">New Password</label>
-                              </div>
-                              <div class="col-sm-8 position-relative fontawesome">
+                              <div class="col-12 position-relative fontawesome">
+                                <label class="heading-xs-medium">New Password</label>
                                 <div class="input-group mb-3">
                                   <input
                                     autocomplete="off"
@@ -276,10 +265,8 @@
                               </div>
                             </div>
                             <div class="row">
-                              <div class="col-sm-4">
-                                <label class="heading-xs-regular mt-2">Confirm Password</label>
-                              </div>
-                              <div class="col-sm-8 position-relative fontawesome">
+                              <div class="col-12 position-relative fontawesome">
+                                <label class="heading-xs-medium">Confirm Password</label>
                                 <div class="input-group mb-3">
                                   <input
                                     autocomplete="off"
